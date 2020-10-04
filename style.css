@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+}
+
+/* header {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.logo {
+    /* display: inline; */
+    /* width: 12%;
+    height: 21vh; */
+}
+
+.team-lead {
+    /* display: inline; */
+    /* width: 29%; */
+    
+}
