@@ -44,6 +44,7 @@ header {
 .logo {
     width: 12%;
     height: 21vh;
+    /* position: fixed; */
 }
 
 .navigation {
@@ -58,12 +59,27 @@ a {
     color: #B89068;
     text-decoration: none;
     letter-spacing: .5rem;
+    padding: 1rem 2rem;
+    /* border-bottom: 1px solid #B89068; */
     
+    
+}
+
+a:hover {
+    color: #4F545F;
+    background-color: #F7DDA4;
+    border: 2px solid goldenrod;
+    /* padding: 1rem; */
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 200ms linear;
+
 }
 
 .team-lead {
     width: 15%;
     margin-top: 4rem;
+    
 }
 
 .team-lead__wrapper{
@@ -83,12 +99,19 @@ a {
 .team-lead__presentation {
     margin-top: 4rem;
     font-size: 2.5rem;
-    color: lightcyan;
+    color: #F7DDA4;
 }
+
+.team-lead__presentation-entity {
+    color: white;
+    font-size: 9rem;
+    margin-left: 10rem;
+    
+}  
 
 .header-slogan {
     position: absolute;
-    top: 70%;
+    top: 65%;
     left: 45%;
     transform: translate(-50%, -50%);
 }
@@ -96,13 +119,13 @@ a {
 h1 {
     font-size: 9.5rem;
     line-height: 1;
-    color: lightcyan;
+    color: #F7DDA4;
 }
 
-.button-contactUs:read-only {
+.button-contactUs {
     color: white;
     font-size: 3.5rem;
-    /* font-weight: 500; */
+    
     letter-spacing: .5rem;
     background-color: #B89068;
     display: inline-block;
@@ -119,14 +142,9 @@ h1 {
 }
 
 .button-contactUs:hover {
-    color: #18cb1a;
+    color: #4F545F;
     background-color: #F7DDA4;
-    /* font-size: 4rem;
-    letter-spacing: 1rem;
-    border-radius: 1rem; */
-
-    /* display: block; */
-    /* letter-spacing: 1rem; */
+    
     -webkit-transition: background-color 1000ms linear;
     -ms-transition: background-color 1000ms linear;
     transition: background-color 1000ms linear;
@@ -134,8 +152,23 @@ h1 {
     transition: color 300ms linear;
 
     /* transition: letter-spacing 400ms linear; */
+    box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
 }
 
+.header-slogan .button-contactUs span {
+    padding-left: 3rem;
+    font-size: 5rem ;
+    /* display: inline; */
+    /* visibility: hidden; */
+
+    /* display: none; */
+}
+
+.button-contactUs span:hover {
+    /* display: block; */
+    /* display: inline; */
+    /* visibility: visible; */
+}
 
 .cover-video {
     min-width: 100%;
@@ -150,26 +183,11 @@ h1 {
     
   }
 
-  .header-slogan .button-contactUs span {
-      padding-left: 3rem;
-      font-size: 5rem ;
-      /* display: inline; */
-      /* visibility: hidden; */
-
-      display: none;
-  }
-
-  .button-contactUs span:hover {
-      display: block;
-      /* display: inline; */
-      /* visibility: visible; */
-  }
   
-.poki {
-    color: white;
-    font-size: 6rem;
-    text-align: center;
-}  
+
+
+  
+
 
 /*         chernovik                 */
 
