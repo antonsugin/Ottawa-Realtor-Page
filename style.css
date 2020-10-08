@@ -55,8 +55,9 @@ header {
 }
 
 a {
-    color: wheat;
+    color: #B89068;
     text-decoration: none;
+    letter-spacing: .5rem;
     
 }
 
@@ -69,9 +70,9 @@ a {
     overflow: hidden;
     border-radius: 50%;
     margin-right: 5rem;
-    -webkit-box-shadow: 0px 9px 61px 2px rgba(181,142,43,1);
-    -moz-box-shadow: 0px 9px 61px 2px rgba(181,142,43,1);
-    box-shadow: 0px 9px 61px 2px rgba(181,142,43,1);
+    -webkit-box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
+    -moz-box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
+    box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
 }
     
 .team-lead__wrapper img  {
@@ -98,8 +99,41 @@ h1 {
     color: lightcyan;
 }
 
-.button-contactUs {
+.button-contactUs:read-only {
+    color: white;
+    font-size: 3.5rem;
+    /* font-weight: 500; */
+    letter-spacing: .5rem;
+    background-color: #B89068;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.5rem 4rem;
+    margin-top: 2rem;
 
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+
+    transition: letter-spacing 400ms linear;
+
+}
+
+.button-contactUs:hover {
+    color: #18cb1a;
+    background-color: #F7DDA4;
+    /* font-size: 4rem;
+    letter-spacing: 1rem;
+    border-radius: 1rem; */
+
+    /* display: block; */
+    /* letter-spacing: 1rem; */
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+
+    transition: color 300ms linear;
+
+    /* transition: letter-spacing 400ms linear; */
 }
 
 
@@ -116,7 +150,26 @@ h1 {
     
   }
 
+  .header-slogan .button-contactUs span {
+      padding-left: 3rem;
+      font-size: 5rem ;
+      /* display: inline; */
+      /* visibility: hidden; */
+
+      display: none;
+  }
+
+  .button-contactUs span:hover {
+      display: block;
+      /* display: inline; */
+      /* visibility: visible; */
+  }
   
+.poki {
+    color: white;
+    font-size: 6rem;
+    text-align: center;
+}  
 
 /*         chernovik                 */
 
