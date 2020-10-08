@@ -96,18 +96,41 @@ a:hover {
     margin-top: -5rem;
 }
 
-.team-lead__presentation {
+/* .team-lead__presentation {
     margin-top: 4rem;
     font-size: 2.5rem;
     color: #F7DDA4;
+} */
+
+.team-lead__presentation:hover > .team-lead__presentation-entity {
+    color: #FFDF00;
+    transition: color 200ms linear;
+   
 }
 
 .team-lead__presentation-entity {
-    color: white;
+    color: #F7DDA4;
     font-size: 9rem;
-    margin-left: 10rem;
+    margin-left: 2rem;
     
 }  
+
+/* @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash'); */
+/* @import url('https://fonts.googleapis.com/css?family=Emilys+Candy'); */
+/* @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative'); */
+/* @import url('https://fonts.googleapis.com/css?family=Arizonia'); */
+/* @import url('https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise'); */
+
+.team-lead__presentation{
+    /* font-family: "Emilys Candy"; */
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    text-align: center;
+    font-size: 2.5rem;
+    color:  #F7DDA4;
+    margin-top: 4rem;
+    /* background-color: rgb(84, 84, 84); */
+    text-shadow: rgb(0, 0, 0) 0px 2px 2px;
+}
 
 .header-slogan {
     position: absolute;
@@ -152,23 +175,16 @@ h1 {
     transition: color 300ms linear;
 
     /* transition: letter-spacing 400ms linear; */
+
     box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
 }
 
 .header-slogan .button-contactUs span {
     padding-left: 3rem;
     font-size: 5rem ;
-    /* display: inline; */
-    /* visibility: hidden; */
-
-    /* display: none; */
 }
 
-.button-contactUs span:hover {
-    /* display: block; */
-    /* display: inline; */
-    /* visibility: visible; */
-}
+
 
 .cover-video {
     min-width: 100%;
@@ -191,6 +207,9 @@ h1 {
 
 /*         chernovik                 */
 
+
+/* &ldquo; */
+/* &rdquo; */
       /* .secondborder {
     background-color: #7d7d7d;
     background-image: url(images/oriental-tiles.png);
