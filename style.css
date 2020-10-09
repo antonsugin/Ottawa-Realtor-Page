@@ -60,6 +60,7 @@ a {
     text-decoration: none;
     letter-spacing: .5rem;
     padding: 1rem 2rem;
+    text-align: center;
     /* border-bottom: 1px solid #B89068; */
     
     
@@ -200,6 +201,62 @@ h1 {
   }
 
   
+
+
+  @media only screen and (max-width: 1550px) {
+
+    .navigation {
+        font-size: 1.7rem;
+        width: 65%;
+    }
+    
+    a {
+        /* text-align: center; */
+
+    }
+
+    .team-lead {
+        margin-top: 0rem;
+    }
+
+    .team-lead__wrapper{
+        margin-right: 0rem;
+    }
+        
+    .team-lead__wrapper img  {
+        margin-top: -3rem;
+    }
+
+    .team-lead__presentation{
+        font-size: 2rem;
+        margin-top: 0rem;
+    }
+
+    .team-lead__presentation-entity {
+        font-size: 3rem;
+        margin-left: 1rem;
+    }  
+
+    .header-slogan {
+        top: 60%;
+    }
+    
+    h1 {
+        font-size: 5.5rem;
+        line-height: 1;
+    }
+    
+    .button-contactUs {
+        letter-spacing: .5rem;
+        padding: .5rem 2.5rem;
+        font-size: 2rem;
+    }
+
+    .header-slogan .button-contactUs span {
+        padding-left: 2rem;
+        font-size: 3rem ;
+    }
+  }  
 
 
   
