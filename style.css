@@ -14,7 +14,7 @@ html {
 body {
     font-weight: 300;
     line-height: 1.6;
-    /* background-image: url(images/oriental-tiles.png); */
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -30,21 +30,16 @@ body {
 header {
     position: relative;
     background-image: url(video/coverr-drone-shot-in-tierra-del-fuego-argentina-14-7426.mp4);
-    
-    /* background-image: url(images/more-leaves-on-green.png); */
 }
-
 
 .header-wrapper {
     display: flex;
     justify-content: space-between;
-    
 }
 
 .logo {
-    width: 12%;
-    height: 21vh;
-    /* position: fixed; */
+    width: 15vw;
+    height: 28vh;
 }
 
 .navigation {
@@ -60,27 +55,21 @@ a {
     text-decoration: none;
     letter-spacing: .5rem;
     padding: 1rem 2rem;
-    text-align: center;
-    /* border-bottom: 1px solid #B89068; */
-    
-    
+    text-align: center;    
 }
 
 a:hover {
     color: #4F545F;
     background-color: #F7DDA4;
     border: 2px solid goldenrod;
-    /* padding: 1rem; */
     -webkit-transition: background-color 1000ms linear;
     -ms-transition: background-color 1000ms linear;
     transition: background-color 200ms linear;
-
 }
 
 .team-lead {
-    width: 15%;
-    margin-top: 4rem;
-    
+    width: 15vw;
+    margin-top: 1rem;
 }
 
 .team-lead__wrapper{
@@ -97,46 +86,29 @@ a:hover {
     margin-top: -5rem;
 }
 
-/* .team-lead__presentation {
-    margin-top: 4rem;
-    font-size: 2.5rem;
-    color: #F7DDA4;
-} */
-
-.team-lead__presentation:hover > .team-lead__presentation-entity {
+.team-lead__presentation:hover > 
+.team-lead__presentation-entity {
     color: #FFDF00;
     transition: color 200ms linear;
-   
 }
 
 .team-lead__presentation-entity {
     color: #F7DDA4;
     font-size: 9rem;
     margin-left: 2rem;
-    
 }  
 
-/* @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash'); */
-/* @import url('https://fonts.googleapis.com/css?family=Emilys+Candy'); */
-/* @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative'); */
-/* @import url('https://fonts.googleapis.com/css?family=Arizonia'); */
-/* @import url('https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise'); */
-
 .team-lead__presentation{
-    /* font-family: "Emilys Candy"; */
-    /* font-family: Georgia, 'Times New Roman', Times, serif; */
     text-align: center;
     font-size: 2.5rem;
     color:  #F7DDA4;
-    margin-top: 4rem;
-    /* background-color: rgb(84, 84, 84); */
-    text-shadow: rgb(0, 0, 0) 0px 2px 2px;
+    font-family: 'Sansita Swashed', cursive;
 }
 
 .header-slogan {
     position: absolute;
-    top: 65%;
-    left: 45%;
+    top: 75vh;
+    left: 39vw;
     transform: translate(-50%, -50%);
 }
 
@@ -144,39 +116,29 @@ h1 {
     font-size: 9.5rem;
     line-height: 1;
     color: #F7DDA4;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
 }
 
 .button-contactUs {
     color: white;
-    font-size: 3.5rem;
-    
+    font-size: 3.5rem; 
     letter-spacing: .5rem;
     background-color: #B89068;
     display: inline-block;
     cursor: pointer;
     padding: 0.5rem 4rem;
     margin-top: 2rem;
-
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
-
-    transition: letter-spacing 400ms linear;
-
 }
 
 .button-contactUs:hover {
     color: #4F545F;
     background-color: #F7DDA4;
-    
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
-
+    -webkit-transition: color 300ms linear;
+    -ms-transition: color 300ms linear;
     transition: color 300ms linear;
-
-    /* transition: letter-spacing 400ms linear; */
-
+    -webkit-box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
+    -moz-box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
     box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
 }
 
@@ -184,8 +146,6 @@ h1 {
     padding-left: 3rem;
     font-size: 5rem ;
 }
-
-
 
 .cover-video {
     min-width: 100%;
@@ -196,10 +156,10 @@ h1 {
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: -100;
-    
+    z-index: -100; 
   }
 
+  
   
 
 
@@ -208,15 +168,6 @@ h1 {
     .navigation {
         font-size: 1.7rem;
         width: 65%;
-    }
-    
-    a {
-        /* text-align: center; */
-
-    }
-
-    .team-lead {
-        margin-top: 0rem;
     }
 
     .team-lead__wrapper{
@@ -238,7 +189,7 @@ h1 {
     }  
 
     .header-slogan {
-        top: 60%;
+        top: 60vh;
     }
     
     h1 {
