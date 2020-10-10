@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    margin: 5rem;
+    /* margin: 5rem; */
 }
 
 
@@ -29,17 +29,23 @@ body {
 
 header {
     position: relative;
-    background-image: url(video/coverr-drone-shot-in-tierra-del-fuego-argentina-14-7426.mp4);
+    height: 100vh;
 }
 
 .header-wrapper {
     display: flex;
     justify-content: space-between;
+    padding: 5rem;
 }
 
 .logo {
-    width: 15vw;
-    height: 28vh;
+    width: 15%;
+    height: fit-content;
+    margin-left: -3rem;
+}
+
+.logo img {
+    width: 100%;
 }
 
 .navigation {
@@ -55,7 +61,8 @@ a {
     text-decoration: none;
     letter-spacing: .5rem;
     padding: 1rem 2rem;
-    text-align: center;    
+    text-align: center;
+        
 }
 
 a:hover {
@@ -68,8 +75,8 @@ a:hover {
 }
 
 .team-lead {
-    width: 15vw;
-    margin-top: 1rem;
+    width: 15%;
+    margin-top: 2rem;
 }
 
 .team-lead__wrapper{
@@ -83,7 +90,7 @@ a:hover {
     
 .team-lead__wrapper img  {
     width: 100%;
-    margin-top: -5rem;
+    margin-top: -4rem;
 }
 
 .team-lead__presentation:hover > 
@@ -107,12 +114,12 @@ a:hover {
 
 .header-slogan {
     position: absolute;
-    top: 75vh;
-    left: 39vw;
+    top: 75%;
+    left: 45%;
     transform: translate(-50%, -50%);
 }
 
-h1 {
+.header-slogan h1 {
     font-size: 9.5rem;
     line-height: 1;
     color: #F7DDA4;
@@ -147,20 +154,19 @@ h1 {
     font-size: 5rem ;
 }
 
-.cover-video {
-    min-width: 100%;
-    min-height: 100%;
+.video-wrapper {
     filter: brightness(20%);
-    position: fixed;
+    position: absolute;
+    overflow: hidden;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: -100; 
+    z-index: -1; 
   }
 
   
-  
+
 
 
   @media only screen and (max-width: 1550px) {
@@ -192,8 +198,8 @@ h1 {
         top: 60vh;
     }
     
-    h1 {
-        font-size: 5.5rem;
+    .header-slogan h1 {
+        font-size: 6.5rem;
         line-height: 1;
     }
     
@@ -210,7 +216,44 @@ h1 {
   }  
 
 
-  
+
+ /*  ************  REALTORS  ***********  */ 
+
+
+.realtors {
+    width: 100%;
+    padding-top: 2rem;
+    /* margin: 5rem; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.realtor {
+    width: 33%;
+    border-radius: 50%;
+    /* height: 50%; */
+}
+
+.realtor-one img {
+    width: 100%;
+    border-radius: 50%;
+    /* background-color: tomato; */
+}
+
+.realtor-two img {
+    /* background-color: yellow; */
+    width: 100%;
+    border-radius: 50%;
+}
+
+.realtor-three img {
+    /* background-color: violet; */
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+
 
 
 /*         chernovik                 */
