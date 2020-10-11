@@ -95,18 +95,22 @@ a:hover {
 }
 
 .team-lead__presentation:hover > 
-.team-lead__presentation-entity {
+.team-lead__presentation-entity,
+.realtor__presentation:hover >
+.realtor__presentation-entity {
     color: #FFDF00;
     transition: color 200ms linear;
 }
 
-.team-lead__presentation-entity {
+.team-lead__presentation-entity,
+.realtor__presentation-entity {
     color: #F7DDA4;
     font-size: 9rem;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
 }  
 
-.team-lead__presentation{
+.team-lead__presentation,
+.realtors-presentation{
     text-align: center;
     font-size: 2.5rem;
     color:  #F7DDA4;
@@ -172,7 +176,6 @@ a:hover {
   .video-wrapper video {
     min-width: 100%;
     /* min-height: 100%; */
-    /* padding: 0; */
   }
 
   
@@ -231,105 +234,75 @@ a:hover {
 
 
 .realtors {
-    /* position: relative; */
     width: 100%;
     padding-top: 2rem;
-    margin-bottom: 5rem;
-    /* margin: 5rem; */
-    display: flex;
-    justify-content: space-evenly;
-    /* flex-direction: column; */
-    /* align-items: center; */
+    padding-bottom: 10rem;
     padding-right: 20rem ;
     padding-left: 20rem ;
+    display: flex;
+    justify-content: space-evenly;
+    
 }
-
-/* .realtor {
-    width: 33%;
-    border-radius: 50%;
-    height: 50%;
-} */
-
-/* .realtor-one {
-    width: 33%;
-    display: inline-block;
-    position: relative;
-    width: 50rem;
-    height: 50rem;
-    overflow: hidden;
-    border-radius: 50%;
-} */
 
 .realtor {
-    flex-direction: column;
-    /* width: 30%; */
-    /* position: relative; */
-    /* position: absolute; */
+    
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-direction: column;
     align-items: center;
-    /* justify-content: space-evenly; */
-    /* flex-shrink: 0; */
-    /* margin-left: 20rem ;
-    margin-left: 20rem ; */
-    /* align-items: center; */
 }
-
-.realtors-presentation {
-    /* padding-left: 15rem; */
-    width: 75%;
-    /* align-self: center; */
-}
-
 
 .realtor-one,
 .realtor-two,
 .realtor-three {
-    /* align-self: center; */
-
-    /* margin-left: 10rem; */
-    /* flex-shrink: 0; */
-    /* display: flex;
-    flex-wrap: wrap; */
-    /* position: relative; */
-    /* width: 33%; */
-    /* width: 50rem; */
     max-width: 50rem;
     max-height: 50rem;
-    /* height: 50rem; */
     overflow: hidden;
     border-radius: 50%;
 }
 
 .realtor-one img {
-    width: 100%;
-    height: auto;
-    /* border-radius: 50%; */
-    /* height: 100%; */
-    /* margin-left: 2rem; */
     margin-top: -10rem;
-    
 }
 
+.realtor-one img,
 .realtor-two img,
 .realtor-three img {
-    
     width: 100%;
     height: auto;
-
-    /* border-radius: 50%; */
 }
 
-/* .realtor-three img {
+.realtors-presentation {
+    width: 75%;
+}
+
+.button-contactMe {
+    color: white;
+    font-size: 3.5rem; 
+    letter-spacing: .5rem;
+    background-color: #B89068;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.5rem 4rem;
+    margin-top: 2rem;
+
     
-    width: 100%;
-    height: auto;
-    margin-top: 1rem;
-    border-radius: 50%;
-} */
+}
 
+.button-contactMe:hover {
+    color: #4F545F;
+    background-color: #F7DDA4;
+    -webkit-transition: color 300ms linear;
+    -ms-transition: color 300ms linear;
+    transition: color 300ms linear;
+    -webkit-box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
+    -moz-box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
+    box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
+}
 
-
+.button-contactMe span {
+    padding-left: 3rem;
+    font-size: 5rem ;
+}
 
 
 /*         chernovik                 */
