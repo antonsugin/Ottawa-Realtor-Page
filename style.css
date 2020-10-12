@@ -106,11 +106,12 @@ a:hover {
 .realtor__presentation-entity {
     color: #F7DDA4;
     font-size: 9rem;
+    /* color: #0F2027; */
     /* margin-left: 2rem; */
 }  
 
-.team-lead__presentation,
-.realtors-presentation{
+.team-lead__presentation{
+/* .realtors-presentation{ */
     text-align: center;
     font-size: 2.5rem;
     color:  #F7DDA4;
@@ -232,8 +233,66 @@ a:hover {
 
  /*  ************  REALTORS  ***********  */ 
 
-
 .realtors {
+
+    /* background-image: linear-gradient(to left bottom, #bfd16b, #aed77e, #9fdd92, #92e1a6, #89e4ba, #7dd7b9, #75c9b5, #70bbb0, #629b95, #547d7a, #47605f, #3a4444); */
+
+    /* background: #0F2027; */
+
+        /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027); */
+        /* Chrome 10-25, Safari 5.1-6 */
+
+    /* background: linear-gradient(to top, #2C5364, #203A43, #0F2027); */
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /* opacity: 0.7; */
+
+    /* background: linear-gradient(to top, #2C5364, #203A43, #0F2027, transparent), url("images/Sales Team/background image/Original.jpg") no-repeat center;  */
+
+
+    /* background-image: url("images/Sales Team/background image/Original.jpg"); */
+
+    /* background-position: center;  */
+    /* background-repeat: no-repeat; */
+    background-size: cover; 
+    /* background-attachment: fixed; */
+    /* opacity: 0.2; */
+    /* z-index: -1000000; */
+
+    /* box-shadow: 0px 10px 20px -5px rgba(0,0,0,.1);  */
+
+
+    background: linear-gradient(228deg, rgba(2,0,36,.7) 0%, rgba(23,34,82,.7) 31%, rgba(0,212,255,.7) 62%),url("images/Sales Team/background image/Original.jpg") no-repeat center;
+
+
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url('https://placekitten.com/1200/800'); */
+    /* background-size: cover; */
+
+
+} 
+
+
+.realtors::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    /* background: linear-gradient(to top, #2C5364, #203A43, #0F2027); */
+    /* opacity: 0.2; */
+    /* background-color: rgba(0,0,0,0.7); */
+}
+
+.realtors .realtors-wrapper {
     width: 100%;
     padding-top: 2rem;
     padding-bottom: 10rem;
@@ -241,7 +300,10 @@ a:hover {
     padding-left: 20rem ;
     display: flex;
     justify-content: space-evenly;
+    position: relative;
+    /* z-index: 10000000; */
     
+        
 }
 
 .realtor {
@@ -271,9 +333,22 @@ a:hover {
     height: auto;
 }
 
-.realtors-presentation {
+.realtors-presentation { 
     width: 75%;
 }
+
+.realtors-presentation p  {
+    /* color: black !important;  */
+    /* background-color: blueviolet; */
+    /* background: rgb(2,0,36); */
+    
+
+    text-align: center;
+    font-size: 2.5rem;
+    color:  white;
+    font-family: 'Sansita Swashed', cursive;
+    
+} 
 
 .button-contactMe {
     color: white;
@@ -284,6 +359,8 @@ a:hover {
     cursor: pointer;
     padding: 0.5rem 4rem;
     margin-top: 2rem;
+
+    /* border-radius: 25%; */
 
     
 }
