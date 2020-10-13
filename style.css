@@ -31,10 +31,6 @@ header {
     position: relative;
     /* width: 100vw; */
     /* height: 100vh; */
-    /* background: linear-gradient(228deg, rgba(15,32,39,.5) 0%, rgba(32,58,67,.5) 44%, rgba(44,83,100,.5) 58%) ; */
-
-    /* background: linear-gradient(180deg, rgba(0,0,70,.5) 0%, rgba(28,181,224,.5) 100%); */
-    /* background: linear-gradient(180deg, rgba(0,0,70,.5) 0%, rgba(14,91,147,.5) 50%, rgba(28,181,224,.5) 100%); */
 }
 
 .header-wrapper {
@@ -42,6 +38,8 @@ header {
     justify-content: space-between;
     padding: 5rem;
     height: 100vh;
+    background: -moz-linear-gradient(180deg, rgba(0,0,70,.5) 0%, rgba(14,91,147,.5) 50%, rgba(28,181,224,.5) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,70,.5) 0%, rgba(14,91,147,.5) 50%, rgba(28,181,224,.5) 100%);
     background: linear-gradient(180deg, rgba(0,0,70,.5) 0%, rgba(14,91,147,.5) 50%, rgba(28,181,224,.5) 100%);
 }
 
@@ -70,8 +68,25 @@ a {
     letter-spacing: .5rem;
     padding: 1rem 2rem;
     text-align: center;
-        
+    /* width: 100%;  */
+    position: relative;
 }
+
+
+
+
+.navigation a:before {
+    content : "";
+    position: absolute;
+    left    : 0;
+    bottom  : 0;
+    /* height  : 1px; */
+    width: 100px;  /* or 100px */
+    border-bottom: 1px solid #F7DDA4;
+  }
+
+
+
 
 a:hover {
     color: #4F545F;
@@ -110,26 +125,21 @@ a:hover {
 .team-lead__presentation-entity,
 .realtor__presentation:hover >
 .realtor__presentation-entity {
-    color: #FFDF00;
+    color: #FFD700;
     transition: color 200ms linear;
 }
 
 .team-lead__presentation-entity,
 .realtor__presentation-entity {
-    /* color: #F7DDA4; */
     color: #B89068;
+    transition: color 200ms linear;
     font-size: 9rem;
-    /* margin-top: -3.5rem; */
-    /* margin-bottom: -3.5rem; */
-    /* color: #0F2027; */
-    /* margin-left: 2rem; */
 }  
 
 .team-lead__presentation{
-/* .realtors-presentation{ */
     text-align: center;
     font-size: 2.5rem;
-    color:  #F7DDA4;
+    color: #FFE4C4;
     font-family: 'Sansita Swashed', cursive;
 }
 
@@ -149,7 +159,7 @@ a:hover {
 }
 
 .button-contactUs {
-    color: white;
+    color: #fceed1;
     font-size: 3.5rem; 
     letter-spacing: .5rem;
     background-color: #B89068;
@@ -157,8 +167,7 @@ a:hover {
     cursor: pointer;
     padding: 0.5rem 4rem;
     margin-top: 2rem;
-
-    
+    transition: color 300ms linear;
 }
 
 .button-contactUs:hover {
@@ -252,25 +261,19 @@ a:hover {
 
 .realtors  {
     width: 100%;
-    padding-top: 2rem;
+    padding-top: 3rem;
     padding-bottom: 10rem;
     padding-right: 20rem ;
     padding-left: 20rem ;
     display: flex;
     justify-content: space-evenly;
-    
-
-    /* background: -moz-linear-gradient(228deg, rgba(2,0,36,.7) 0%, rgba(23,34,82,.7) 31%, rgba(0,212,255,.7) 62%),url("images/Sales Team/background image/Original.jpg") no-repeat center center / cover;
-    background: -webkit-linear-gradient(228deg, rgba(2,0,36,.7) 0%, rgba(23,34,82,.7) 31%, rgba(0,212,255,.7) 62%),url("images/Sales Team/background image/Original.jpg") no-repeat center center / cover; */
-    /* background: linear-gradient(228deg, rgba(2,0,36,.7) 0%, rgba(23,34,82,.7) 31%, rgba(0,212,255,.7) 62%),url("images/Sales Team/background image/Original.jpg") no-repeat center center / cover ; */
-    
-
+    background: -moz-linear-gradient(228deg, rgba(15,32,39,.9) 0%, rgba(32,58,67,.9) 44%, rgba(44,83,100,.9) 58%),url("images/Sales Team/background image/Original.jpg") no-repeat center center / cover ;
+    background: -webkit-linear-gradient(228deg, rgba(15,32,39,.9) 0%, rgba(32,58,67,.9) 44%, rgba(44,83,100,.9) 58%),url("images/Sales Team/background image/Original.jpg") no-repeat center center / cover ;
     background: linear-gradient(228deg, rgba(15,32,39,.9) 0%, rgba(32,58,67,.9) 44%, rgba(44,83,100,.9) 58%),url("images/Sales Team/background image/Original.jpg") no-repeat center center / cover ;
       
 }
 
 .realtor {
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -298,25 +301,17 @@ a:hover {
 
 .realtors-presentation { 
     width: 75%;
-    /* margin-top: -3.5rem; */
-    /* margin-bottom: -3.5rem; */
 }
 
 .realtors-presentation p  {
-    /* color: black !important;  */
-    /* background-color: blueviolet; */
-    /* background: rgb(2,0,36); */
-    
-
     text-align: center;
     font-size: 2.5rem;
-    color:  white;
+    color: #DDDDDD;
     font-family: 'Sansita Swashed', cursive;
-    
 } 
 
 .button-contactMe {
-    color: white;
+    color: #fceed1;
     font-size: 3.5rem; 
     letter-spacing: .5rem;
     background-color: #B89068;
@@ -324,10 +319,7 @@ a:hover {
     cursor: pointer;
     padding: 0.5rem 4rem;
     margin-top: 2rem;
-
-    /* border-radius: 25%; */
-
-    
+    transition: color 300ms linear;    
 }
 
 .button-contactMe:hover {
@@ -347,8 +339,7 @@ a:hover {
 }
 
 .name {
-    font-size: 4rem;
-    /* color: #B89068; */
+    font-size: 4rem; 
     color: #F7DDA4;
 }
 
