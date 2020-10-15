@@ -60,6 +60,8 @@ header {
     width: 57%;
     height: fit-content;
     font-size: 2rem;
+
+    position: relative;
 }
 
 a {
@@ -70,19 +72,48 @@ a {
     text-align: center;
     /* width: 100%;  */
     position: relative;
+    /* border: 1px solid #F7DDA4; */
+    /* z-index: 10000; */
+
+    
+    
 }
 
 
 
 
-.navigation a:before {
+.navigation a::before {
     content : "";
     position: absolute;
+    top: 0;
+    right: 0;
     left    : 0;
     bottom  : 0;
-    /* height  : 1px; */
-    width: 100px;  /* or 100px */
-    border-bottom: 1px solid #F7DDA4;
+    height  : 100%;
+    width: 0%;  /* or 100px */
+    /* z-index: -1; */
+    /* background-color: #FFD700; */
+    transition: 1s;
+    /* border-bottom: 1px solid #F7DDA4; */
+    /* transform: scale(0); */
+  }
+
+  .navigation a::after {
+    /* content : "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left    : 0;
+    bottom  : 0;
+    height  : 100%;
+    width: 100%; */
+      /* or 100px */
+
+    /* background-color: #FFD700; */
+    /* border-bottom: 1px solid #F7DDA4; */
+    /* transform: scale(0); */
+    /* z-index: -2;
+    transition: 1s; */
   }
 
 
@@ -92,10 +123,35 @@ a:hover {
     color: #4F545F;
     background-color: #F7DDA4;
     border: 2px solid goldenrod;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+    
+}
+
+a:hover::before {
+    /* color: #4F545F;
+    background-color: #F7DDA4;
+    border: 2px solid goldenrod;
     -webkit-transition: background-color 1000ms linear;
     -ms-transition: background-color 1000ms linear;
-    transition: background-color 200ms linear;
+    transition: background-color 200ms linear; */
+    /* transform: scale(1); */
+    /* transition: 1s; */
+    /* border: 1px solid #F7DDA4; */
+    /* border-bottom: 1px solid #F7DDA4;
+    border-right: 1px solid #F7DDA4;
+    border-top: 1px solid #F7DDA4;
+    border-left: 1px solid #F7DDA4;
+    transition: border-bottom 1s,border-right 2s,border-top 3s,border-left 4s; */
+    /* width: 100%; */
+    /* background-color: #F7DDA4; */
+    /* z-index: -1; */
 }
+
+
+
+
 
 .team-lead {
     width: 25%;
