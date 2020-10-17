@@ -31,9 +31,14 @@ header {
     position: relative;
     /* width: 100vw; */
     /* height: 100vh; */
+    overflow: hidden;
 }
 
 .header-wrapper {
+
+    /* overflow: hidden; */
+    width: 100%;
+
     display: flex;
     justify-content: space-between;
     padding: 5rem;
@@ -44,14 +49,18 @@ header {
 }
 
 .logo {
-    width: 10%;
-    height: fit-content;
-    margin-left: 5rem;
+    max-width: 10%;
+    /* height: fit-content; */
+    /* min-height: 100%; */
+    /* margin-left: 5rem; */
     margin-top: -1rem;
+    /* overflow: hidden; */
 }
 
 .logo img {
     width: 100%;
+    /* overflow: hidden; */
+    /* min-height: 100%; */
 }
 
 .navigation {
@@ -71,7 +80,7 @@ a {
     padding: 1rem 2rem;
     text-align: center;
     /* width: 100%;  */
-    position: relative;
+    /* position: relative; */
     /* border: 1px solid #F7DDA4; */
     /* z-index: 10000; */
 
@@ -155,17 +164,24 @@ a:hover::before {
 
 .team-lead {
     width: 25%;
-    /* min-height: 100vh; */
+    min-height: 100vh;
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* z-index: ; */
+    /* overflow: hidden; */
 }
 
 .team-lead__wrapper{
-    width: 65%;
-    overflow: hidden;
-    border-radius: 50%;
+    /* position: absolute; */
+    /* overflow: hidden; */
+    width: 60%;
+    /* height: 85%; */
+    background-color: #FFD700;
+    /* height: fit-content; */
+    /* overflow: hidden; */
+    /* border-radius: 50%; */
     margin-right: 0rem;
     -webkit-box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
     -moz-box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
@@ -174,7 +190,9 @@ a:hover::before {
     
 .team-lead__wrapper img  {
     width: 100%;
-    margin-top: -7rem;
+    object-fit: cover;
+    /* height: 100%; */
+    /* margin-top: -7rem; */
 }
 
 .team-lead__presentation:hover > 
@@ -193,6 +211,7 @@ a:hover::before {
 }  
 
 .team-lead__presentation{
+    /* max-height: 100vh; */
     text-align: center;
     font-size: 2.5rem;
     color: #FFE4C4;
@@ -246,12 +265,12 @@ a:hover::before {
     
     filter: brightness(30%);
     position: absolute;
-    overflow: hidden;
+    /* overflow: hidden; */
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: -1; 
+    z-index: -10; 
   }
 
   .video-wrapper video {
@@ -272,15 +291,37 @@ a:hover::before {
 
     .team-lead__wrapper{
         margin-right: 0rem;
+        /* width: 80%; */
+        /* height: 95%; */
+        border-radius: 50%;
+
+
+
+        
+        overflow: hidden;
     }
         
     .team-lead__wrapper img  {
-        margin-top: -3rem;
+        /* margin-top: -3rem; */
+        /* width:auto;  */
+        /* text-align:center;  */
+        /* overflow: hidden; */
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
     }
 
     .team-lead__presentation{
         font-size: 2rem;
         margin-top: 0rem;
+        width: 100%;
+    }
+
+    .you {
+        font-size: 2;
+    }
+    .name {
+        font-size: 3;
     }
 
     .team-lead__presentation-entity {
