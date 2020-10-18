@@ -41,6 +41,7 @@ header {
 
     display: flex;
     justify-content: space-between;
+    /* justify-content: space-evenly; */
     padding: 5rem;
     height: 100vh;
     background: -moz-linear-gradient(180deg, rgba(0,0,70,.5) 0%, rgba(14,91,147,.5) 50%, rgba(28,181,224,.5) 100%);
@@ -49,19 +50,33 @@ header {
 }
 
 .logo {
-    max-width: 10%;
-    /* height: fit-content; */
-    /* min-height: 100%; */
-    /* margin-left: 5rem; */
-    margin-top: -1rem;
-    /* overflow: hidden; */
+    position: absolute;
+    width: 15%;
+    /* background-color: #FFD700; */
+    height: fit-content;
+    /* margin-top: -1rem; */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-right: 5rem;    
 }
 
 .logo img {
-    width: 100%;
-    /* overflow: hidden; */
-    /* min-height: 100%; */
+    /* max-width: 50%; */
+    /* width: 100%; */
+    max-width: 100%;
+    height: auto;
+    /* height: 100%; */
+    
 }
+
+@media only screen and (max-width: 650px) {
+    .logo {
+        width: 20rem;
+        height: 20rem;
+    }
+} 
 
 .navigation {
     display: flex;
@@ -70,7 +85,8 @@ header {
     height: fit-content;
     font-size: 2rem;
 
-    position: relative;
+    margin-left: 10rem;
+    /* position: relative; */
 }
 
 a {
@@ -79,54 +95,7 @@ a {
     letter-spacing: .5rem;
     padding: 1rem 2rem;
     text-align: center;
-    /* width: 100%;  */
-    /* position: relative; */
-    /* border: 1px solid #F7DDA4; */
-    /* z-index: 10000; */
-
-    
-    
 }
-
-
-
-
-.navigation a::before {
-    content : "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    left    : 0;
-    bottom  : 0;
-    height  : 100%;
-    width: 0%;  /* or 100px */
-    /* z-index: -1; */
-    /* background-color: #FFD700; */
-    transition: 1s;
-    /* border-bottom: 1px solid #F7DDA4; */
-    /* transform: scale(0); */
-  }
-
-  .navigation a::after {
-    /* content : "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    left    : 0;
-    bottom  : 0;
-    height  : 100%;
-    width: 100%; */
-      /* or 100px */
-
-    /* background-color: #FFD700; */
-    /* border-bottom: 1px solid #F7DDA4; */
-    /* transform: scale(0); */
-    /* z-index: -2;
-    transition: 1s; */
-  }
-
-
-
 
 a:hover {
     color: #4F545F;
@@ -138,30 +107,6 @@ a:hover {
     
 }
 
-a:hover::before {
-    /* color: #4F545F;
-    background-color: #F7DDA4;
-    border: 2px solid goldenrod;
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 200ms linear; */
-    /* transform: scale(1); */
-    /* transition: 1s; */
-    /* border: 1px solid #F7DDA4; */
-    /* border-bottom: 1px solid #F7DDA4;
-    border-right: 1px solid #F7DDA4;
-    border-top: 1px solid #F7DDA4;
-    border-left: 1px solid #F7DDA4;
-    transition: border-bottom 1s,border-right 2s,border-top 3s,border-left 4s; */
-    /* width: 100%; */
-    /* background-color: #F7DDA4; */
-    /* z-index: -1; */
-}
-
-
-
-
-
 .team-lead {
     width: 25%;
     min-height: 100vh;
@@ -169,19 +114,14 @@ a:hover::before {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* z-index: ; */
-    /* overflow: hidden; */
+    
+    
 }
 
 .team-lead__wrapper{
-    /* position: absolute; */
-    /* overflow: hidden; */
     width: 60%;
     /* height: 85%; */
-    background-color: #FFD700;
-    /* height: fit-content; */
-    /* overflow: hidden; */
-    /* border-radius: 50%; */
+    
     margin-right: 0rem;
     -webkit-box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
     -moz-box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
@@ -270,7 +210,7 @@ a:hover::before {
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: -10; 
+    z-index: -1; 
   }
 
   .video-wrapper video {
@@ -279,10 +219,22 @@ a:hover::before {
   }
 
   
+  .team-lead__presentation span.name {
+    font-size: 4rem; 
+    color: #F7DDA4;
+}
+
+.team-lead__presentation span.you {
+    font-size: 3rem;
+    color: #F7DDA4;
+}
+
 
 
 
   @media only screen and (max-width: 1550px) {
+
+    /*  ************  HEADER  ***********  */
 
     .navigation {
         font-size: 1.7rem;
@@ -297,15 +249,12 @@ a:hover::before {
 
 
 
-        
-        overflow: hidden;
+
+        /* overflow: hidden; */
     }
         
     .team-lead__wrapper img  {
         /* margin-top: -3rem; */
-        /* width:auto;  */
-        /* text-align:center;  */
-        /* overflow: hidden; */
         border-radius: 50%;
         height: 100%;
         width: 100%;
@@ -317,11 +266,11 @@ a:hover::before {
         width: 100%;
     }
 
-    .you {
-        font-size: 2;
+    .team-lead__presentation span.you {
+        /* font-size: 2; */
     }
-    .name {
-        font-size: 3;
+    .team-lead__presentation span.name {
+        /* font-size: 3; */
     }
 
     .team-lead__presentation-entity {
@@ -348,6 +297,87 @@ a:hover::before {
         padding-left: 2rem;
         font-size: 3rem ;
     }
+
+
+    /*  ************  REALTORS  ***********  */ 
+
+
+  }  
+
+
+  @media only screen and (max-width: 1200px) {
+
+    /*  ************  HEADER  ***********  */
+
+    .navigation {
+        font-size: 1rem;
+        font-weight: 600;
+        width: 100%;
+    }
+
+    .team-lead__wrapper{
+        margin-right: 0rem;
+        width: 80%;
+        object-fit: contain;
+        /* height: 100%; */
+        /* border-radius: 50%; */
+
+
+
+
+        /* overflow: hidden; */
+    }
+        
+    .team-lead__wrapper img  {
+        /* margin-top: -3rem; */
+        /* border-radius: 50%; */
+        /* height: 80%; */
+        /* width: 100%; */
+        /* object-fit: cover; */
+    }
+
+    .team-lead__presentation{
+        font-size: 1.5rem;
+        margin-top: 0rem;
+        width: 100%;
+    }
+
+    .team-lead__presentation span.you {
+        font-size: 1.6rem;
+    }
+    .team-lead__presentation span.name {
+        font-size: 1.8rem;
+    }
+
+    .team-lead__presentation-entity {
+        font-size: 3rem;
+        margin-left: 1rem;
+    }  
+
+    .header-slogan {
+        top: 60vh;
+    }
+    
+    .header-slogan h1 {
+        font-size: 4.5rem;
+        line-height: 1;
+    }
+    
+    .button-contactUs {
+        letter-spacing: .5rem;
+        padding: .5rem 2.5rem;
+        font-size: 2rem;
+    }
+
+    .header-slogan .button-contactUs span {
+        padding-left: 2rem;
+        font-size: 3rem ;
+    }
+
+
+    /*  ************  REALTORS  ***********  */ 
+
+
   }  
 
 
@@ -435,12 +465,12 @@ a:hover::before {
     font-size: 5rem ;
 }
 
-.name {
+.realtor__presentation span.name {
     font-size: 4rem; 
     color: #F7DDA4;
 }
 
-.you {
+.realtor__presentation span.you {
     font-size: 3rem;
     color: #F7DDA4;
 }
