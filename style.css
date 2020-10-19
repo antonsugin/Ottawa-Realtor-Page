@@ -40,8 +40,9 @@ header {
     width: 100%;
 
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /* justify-content: space-evenly; */
+    justify-content: flex-end;
     padding: 5rem;
     height: 100vh;
     background: -moz-linear-gradient(180deg, rgba(0,0,70,.5) 0%, rgba(14,91,147,.5) 50%, rgba(28,181,224,.5) 100%);
@@ -59,7 +60,8 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    padding-right: 5rem;    
+    /* padding-right: 35rem;     */
+    /* margin-right: 35rem; */
 }
 
 .logo img {
@@ -85,8 +87,9 @@ header {
     height: fit-content;
     font-size: 2rem;
 
-    margin-left: 10rem;
+    /* margin-left: 10rem; */
     /* position: relative; */
+    /* margin: 0 auto; */
 }
 
 a {
@@ -119,10 +122,12 @@ a:hover {
 }
 
 .team-lead__wrapper{
-    width: 60%;
+    /* width: 60%; */
     /* height: 85%; */
-    
-    margin-right: 0rem;
+    max-width: 50rem;
+    max-height: 50rem;
+    /* overflow: hidden; */
+    border-radius: 50%;
     -webkit-box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
     -moz-box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
     box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
@@ -131,8 +136,8 @@ a:hover {
 .team-lead__wrapper img  {
     width: 100%;
     object-fit: cover;
-    /* height: 100%; */
-    /* margin-top: -7rem; */
+    height: 100%;
+    border-radius: 50%;
 }
 
 .team-lead__presentation:hover > 
@@ -161,7 +166,7 @@ a:hover {
 .header-slogan {
     position: absolute;
     top: 63%;
-    left: 39.5%;
+    left: 42%;
     transform: translate(-50%, -50%);
 }
 
@@ -236,28 +241,28 @@ a:hover {
 
     /*  ************  HEADER  ***********  */
 
+    .logo {
+        margin-top: 4rem;
+    }
+
     .navigation {
         font-size: 1.7rem;
-        width: 65%;
+        margin-right: 2.5rem;
+        /* width: 65%; */
     }
 
     .team-lead__wrapper{
-        margin-right: 0rem;
-        /* width: 80%; */
-        /* height: 95%; */
-        border-radius: 50%;
-
-
-
-
-        /* overflow: hidden; */
+        max-width: 30rem;
+        max-height: 30rem;
+        
     }
         
     .team-lead__wrapper img  {
+        /* object-fit: cover; */
         /* margin-top: -3rem; */
-        border-radius: 50%;
-        height: 100%;
-        width: 100%;
+        /* border-radius: 50%; */
+        /* height: 100%; */
+        /* width: 100%; */
     }
 
     .team-lead__presentation{
@@ -267,19 +272,20 @@ a:hover {
     }
 
     .team-lead__presentation span.you {
-        /* font-size: 2; */
+        font-size: 2rem;
     }
     .team-lead__presentation span.name {
-        /* font-size: 3; */
+        font-size: 2.5rem;
     }
 
     .team-lead__presentation-entity {
         font-size: 3rem;
-        margin-left: 1rem;
+        /* margin-left: 1rem; */
     }  
 
     .header-slogan {
-        top: 60vh;
+        top: 65%;
+        left: 45%;
     }
     
     .header-slogan h1 {
@@ -298,12 +304,9 @@ a:hover {
         font-size: 3rem ;
     }
 
-
-    /*  ************  REALTORS  ***********  */ 
-
-
   }  
 
+  
 
   @media only screen and (max-width: 1200px) {
 
@@ -318,7 +321,7 @@ a:hover {
     .team-lead__wrapper{
         margin-right: 0rem;
         width: 80%;
-        object-fit: contain;
+        /* object-fit: contain; */
         /* height: 100%; */
         /* border-radius: 50%; */
 
@@ -398,12 +401,30 @@ a:hover {
     background: -webkit-linear-gradient(228deg, rgba(15,32,39,.9) 0%, rgba(32,58,67,.9) 44%, rgba(44,83,100,.9) 58%),url("images/Sales Team/background image/Original.jpg") no-repeat center center / cover ;
     background: linear-gradient(228deg, rgba(15,32,39,.9) 0%, rgba(32,58,67,.9) 44%, rgba(44,83,100,.9) 58%),url("images/Sales Team/background image/Original.jpg") no-repeat center center / cover ;
       
+
+    /* flex-wrap: wrap; */
+    /* width: 25%; */
+    /* min-height: 100vh; */
+    height: 100vh;
+
+
+    /* margin-top: 2rem; */
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: center; */
+    
 }
 
 .realtor {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    /* width: min-content; */
+    width: 100%;
+    /* height: 100vh; */
+    margin: 0 4rem;
+    /* min-height: 100vh; */
 }
 
 .realtor-one,
@@ -413,21 +434,35 @@ a:hover {
     max-height: 50rem;
     overflow: hidden;
     border-radius: 50%;
+    /* height: 100vh; */
+    
 }
 
 .realtor-one img {
     margin-top: -10rem;
+    /* object-fit: cover; */
+    /* object-fit: contain; */
 }
 
 .realtor-one img,
 .realtor-two img,
 .realtor-three img {
     width: 100%;
-    height: auto;
+    /* height: auto; */
+
+    /* width: 100%; */
+    /* object-fit: contain; */
+    /* height: 100%;
+
+
+    /* width: 100%;
+    object-fit: cover;
+    height: auto; */
+    /* border-radius: 50%; */
 }
 
 .realtors-presentation { 
-    width: 75%;
+    /* width: 75%; */
 }
 
 .realtors-presentation p  {
@@ -445,7 +480,7 @@ a:hover {
     display: inline-block;
     cursor: pointer;
     padding: 0.5rem 4rem;
-    margin-top: 2rem;
+    margin-top: 10rem;
     transition: color 300ms linear;    
 }
 
@@ -471,10 +506,71 @@ a:hover {
 }
 
 .realtor__presentation span.you {
-    font-size: 3rem;
+    /* font-size: 3rem; */
     color: #F7DDA4;
 }
 
+
+@media only screen and (max-width: 1550px) {
+
+
+     /*  ************  REALTORS  ***********  */
+    
+    .realtors{
+        padding: 0;
+        padding-top:  3rem;
+        height: auto;
+    } 
+
+     .realtor-one,
+     .realtor-two,
+     .realtor-three {
+         max-width: 25rem;
+         max-height: 25rem;
+     }
+
+     .realtor-one img {
+        margin-top: -6rem;
+    }
+ 
+
+    .realtor__presentation{
+        font-size: 2rem;
+        /* margin-top: 0rem; */
+        width: 100%;
+    }
+ 
+     .realtor__presentation span.name {
+         font-size: 2.5rem; 
+         
+     }
+     
+     .realtor__presentation span.you {
+         font-size: 2rem;
+         
+     }
+
+     .realtor__presentation-entity {
+        font-size: 3rem;
+        /* margin-left: 1rem; */
+    }  
+    
+
+     .button-contactMe {
+        letter-spacing: .5rem;
+        padding: .5rem 2.5rem;
+        font-size: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 6.5rem;
+    }
+
+    .button-contactMe span {
+        padding-left: 2rem;
+        font-size: 3rem ;
+    }
+
+
+  }
 
 /*         chernovik                 */
 
