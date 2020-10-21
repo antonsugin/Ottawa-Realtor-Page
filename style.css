@@ -545,9 +545,18 @@ a:hover {
     padding-top: 3rem;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
     /* width: 100%; */
     height: 100vh;
+}
+
+.family-house,
+.bungalow-house,
+.single-family-house {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
 }
 
 .house111 > *,
@@ -563,11 +572,17 @@ a:hover {
 .house111,
 .house222,
 .house333 {
+    /* width: 30%; */
     display: grid;
     grid-gap: 1rem;
+    /* justify-content: center; */
+    /* height: fit-content; */
     
-    grid-template-columns: repeat(11, 6rem);
-    grid-template-rows: repeat(14, 6rem);
+    /* grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(14, 6rem); */
+    /* grid-template: repeat(14, 6rem) / repeat(11, 1fr); */
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(10, 6rem);
     /* width: 30%; */
     /* width: 100%;
     height: 100vh; */
@@ -583,7 +598,7 @@ a:hover {
     height: 100vh;
 } */
 
-.house1 {
+.front-view {
     grid-column-start:1 ;
     grid-column-end:12 ;
     grid-row-start:1 ;
@@ -591,63 +606,168 @@ a:hover {
     
 }
 
-.house1 img {
+.front-view img {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    /* text-align: center; */
+    /* align-self: center; */
     /* overflow: hidden; */
 }
 
-.house2 {
+
+
+.interior-1 {
+    
     grid-column-start:1 ;
     grid-column-end: 4;
     grid-row-start: 7;
     grid-row-end: 11;
+    
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    
+    
 }
 
-.house3 {
+.interior-2 {
     grid-column-start: 4;
-    grid-column-end: 6;
+    grid-column-end: 7;
     grid-row-start: 7;
     grid-row-end: 9;
 }
 
-.house4 {
-    grid-column-start: 6;
-    grid-column-end: 10;
-    grid-row-start: 7;
-    grid-row-end: 9;
-}
-
-.house5 {
-    grid-column-start: 10;
+.interior-3 {
+    grid-column-start: 7;
     grid-column-end: 12;
     grid-row-start: 7;
     grid-row-end: 9;
 }
 
-.house6 {
+.exterior-1 {
     grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 9;
-    grid-row-end: 11;
-}
-
-.house7 {
-    grid-column-start: 6;
     grid-column-end: 9;
     grid-row-start: 9;
     grid-row-end: 11;
 }
 
-.house8 {
+.exterior-2 {
     grid-column-start: 9;
     grid-column-end: 12;
     grid-row-start: 9;
     grid-row-end: 11;
 }
 
-.house9 {
+
+.house-description {
+    font-size: 2.5rem;
+}
+
+.house-description__bedrooms-icon,
+.hohouse-description__price-icon,
+.house-description__area-icon,
+.house-description__date-icon{
+    /* background-color: red; */
+    /* overflow: hidden; */
+    /* color: red; */
+    /* fill: red; */
+    /* filter: invert(0.5) sepia(1) hue-rotate(200deg);      */
+    width: 5%;
+}
+
+
+/* .house-description__bedrooms-icon {
+    height: 10%;
+    width: 10%;
+    background-color: red;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    mask-image: url("images/16358410471580120717.svg");
+
+} */
+
+
+
+.house-description__bedrooms-icon {
+    /* width: 48px;
+    height: 48px;
+    display: inline-block;
+    
+    -webkit-mask: url(images/16358410471580120717.svg) no-repeat 50% 50%;
+    mask: url(images/16358410471580120717.svg) no-repeat 50% 50%;
+    -webkit-mask-size: cover;
+    mask-size: cover; */
+  }
+
+  /* .iconicon {
+    background-color: red;
+  } */
+
+
+.house-description__bedrooms-icon img,
+.hohouse-description__price-icon img,
+.house-description__area-icon img,
+.house-description__date-icon img {
+    /* color: red; */
+    /* background-color: red; */
+    /* fill: red; */
+    /* filter: invert(0.5) sepia(1) hue-rotate(200deg);      */
+    width: 100%;
+    /* height: 100%; */
+    
+}
+
+.button-contactRealtor {
+    color: #fceed1;
+    font-size: 3.5rem; 
+    letter-spacing: .5rem;
+    background-color: #B89068;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.5rem 4rem;
+    margin-top: 10rem;
+    transition: color 300ms linear;   
+    
+    align-self: center;
+}
+
+.button-contactRealtor:hover {
+    color: #4F545F;
+    background-color: #F7DDA4;
+    -webkit-transition: color 300ms linear;
+    -ms-transition: color 300ms linear;
+    transition: color 300ms linear;
+    -webkit-box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
+    -moz-box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
+    box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
+}
+
+.button-contactRealtor span {
+    padding-left: 3rem;
+    font-size: 5rem ;
+}
+
+
+/* .house5 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 10;
+    grid-row-end: 11;
+} */
+
+/* .house6 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 9;
+    grid-row-end: 11;
+} */
+
+/* .house9 {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 11;
@@ -694,7 +814,7 @@ a:hover {
     grid-column-end: 8;
     grid-row-start: 13;
     grid-row-end: 15;
-}
+} */
 
 
 
