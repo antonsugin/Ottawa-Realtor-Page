@@ -531,32 +531,29 @@ a:hover {
 
 /*  ************  HOUSES  ***********  */  
 
-.houses > * {
-    /* width: auto; */
-    /* height: auto; */
-    /* color: black;
-    font-size: 10rem;
-    background-color: greenyellow;
-    text-align: center; */
-    
-}
 
 .houses {
     padding-top: 3rem;
     display: flex;
     justify-content: space-evenly;
     /* justify-content: center; */
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+    /* max-width: 80%; */
+    /* flex-basis: 1; */
     /* width: 100%; */
     height: 100vh;
+    background-color: bisque;
 }
 
 .family-house,
 .bungalow-house,
 .single-family-house {
-    width: 30%;
+    /* width: 30%; */
+    flex: 0 0 30%;
+    /* flex-basis: 1; */
     display: flex;
     flex-direction: column;
+    /* flex-wrap: wrap; */
 }
 
 .house111 > *,
@@ -564,7 +561,7 @@ a:hover {
 .house333 > * {
     color: black;
     font-size: 5rem;
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
     text-align: center;
 }
 
@@ -588,16 +585,6 @@ a:hover {
     height: 100vh; */
 }
 
-/* .houses {
-    display: grid;
-    grid-gap: 1rem;
-    
-    grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(14, 1fr);
-    width: 100%;
-    height: 100vh;
-} */
-
 .front-view {
     grid-column-start:1 ;
     grid-column-end:12 ;
@@ -615,20 +602,31 @@ a:hover {
     /* overflow: hidden; */
 }
 
+/* .interior-1,
+.interior-2,
+.interior-3,
+.exterior-1,
+.exterior-2 {
+
+} */
+
+.interior-1 img,
+.interior-2 img,
+.interior-3 img,
+.exterior-1 img,
+.exterior-2 img {
+    object-fit: cover;
+    /* object-fit: contain; */
+    width: 100%;
+    height: 100%;
+}
 
 
 .interior-1 {
-    
     grid-column-start:1 ;
     grid-column-end: 4;
     grid-row-start: 7;
     grid-row-end: 11;
-    
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    
-    
 }
 
 .interior-2 {
@@ -661,11 +659,128 @@ a:hover {
 
 
 .house-description {
+    margin-top: 3rem;
     font-size: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(4, 4rem);
+    gap: 5rem;
+    background-color: pink;
+    padding: 3rem;
+    border-radius: 2rem;
+    /* justify-content: space-evenly; */
+    /* align-content: start; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+
+.house-description__area-icon {
+    display: flex;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /* text-align: center; */
+}
+
+.house-description__area-location {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /* text-align: center; */
+    
+}
+
+
+.house-description__bedrooms-icon {
+    display: flex;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    
+
+}
+
+.house-description__bedrooms {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    
+    /* text-align: center; */
+}
+
+.house-description__date-icon {
+    display: flex;
+    justify-content: flex-end;
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    transform: translateX(3rem);
+    
+}
+
+
+.house-description__date-current {
+    grid-column-start: 8;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    transform: translateX(2rem);
+    
+}
+
+.house-description__price-icon {
+    display: flex;
+    justify-content: flex-end;
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    transform: translateX(3rem);
+    
+
+}
+
+.house-description__price-amount {
+    grid-column-start: 8;
+    grid-column-end: 12;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    transform: translateX(2rem);
+    
+}
+
+.open-house {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 11;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    border-radius: 5rem;
+    background-color: rgba(28,181,224,.5);
+}
+
+
+.house-description__bedrooms-icon img,
+.house-description__price-icon img,
+.house-description__area-icon img,
+.house-description__date-icon img {
+    height: 100%;
 }
 
 .house-description__bedrooms-icon,
-.hohouse-description__price-icon,
+.house-description__price-icon,
 .house-description__area-icon,
 .house-description__date-icon{
     /* background-color: red; */
@@ -673,53 +788,10 @@ a:hover {
     /* color: red; */
     /* fill: red; */
     /* filter: invert(0.5) sepia(1) hue-rotate(200deg);      */
-    width: 5%;
-}
-
-
-/* .house-description__bedrooms-icon {
-    height: 10%;
-    width: 10%;
-    background-color: red;
-    -webkit-mask-size: contain;
-    mask-size: contain;
-    -webkit-mask-position: center;
-    mask-position: center;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    mask-image: url("images/16358410471580120717.svg");
-
-} */
 
 
 
-.house-description__bedrooms-icon {
-    /* width: 48px;
-    height: 48px;
-    display: inline-block;
-    
-    -webkit-mask: url(images/16358410471580120717.svg) no-repeat 50% 50%;
-    mask: url(images/16358410471580120717.svg) no-repeat 50% 50%;
-    -webkit-mask-size: cover;
-    mask-size: cover; */
-  }
-
-  /* .iconicon {
-    background-color: red;
-  } */
-
-
-.house-description__bedrooms-icon img,
-.hohouse-description__price-icon img,
-.house-description__area-icon img,
-.house-description__date-icon img {
-    /* color: red; */
-    /* background-color: red; */
-    /* fill: red; */
-    /* filter: invert(0.5) sepia(1) hue-rotate(200deg);      */
-    width: 100%;
-    /* height: 100%; */
-    
+    /* width: 5%; */
 }
 
 .button-contactRealtor {
@@ -730,7 +802,7 @@ a:hover {
     display: inline-block;
     cursor: pointer;
     padding: 0.5rem 4rem;
-    margin-top: 10rem;
+    margin-top: 5rem;
     transition: color 300ms linear;   
     
     align-self: center;
@@ -752,69 +824,6 @@ a:hover {
     font-size: 5rem ;
 }
 
-
-/* .house5 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 10;
-    grid-row-end: 11;
-} */
-
-/* .house6 {
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 9;
-    grid-row-end: 11;
-} */
-
-/* .house9 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 11;
-    grid-row-end: 13;
-}
-
-.house10 {
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 11;
-    grid-row-end: 13;
-}
-
-.house11 {
-    grid-column-start: 6;
-    grid-column-end: 8;
-    grid-row-start: 11;
-    grid-row-end: 12;
-}
-
-.house12 {
-    grid-column-start: 6;
-    grid-column-end: 8;
-    grid-row-start: 12;
-    grid-row-end: 13;
-}
-
-.house13 {
-    grid-column-start: 8;
-    grid-column-end: 12;
-    grid-row-start: 11;
-    grid-row-end: 15;
-}
-
-.house14 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 13;
-    grid-row-end: 15;
-}
-
-.house15 {
-    grid-column-start: 4;
-    grid-column-end: 8;
-    grid-row-start: 13;
-    grid-row-end: 15;
-} */
 
 
 
