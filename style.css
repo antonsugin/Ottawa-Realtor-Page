@@ -542,7 +542,9 @@ a:hover {
     /* flex-basis: 1; */
     /* width: 100%; */
     height: 100vh;
-    background-color: bisque;
+    /* height: 100%; */
+    /* background-color: bisque; */
+    background-image: url("images/diamond_upholstery.png");
 }
 
 .family-house,
@@ -556,13 +558,55 @@ a:hover {
     /* flex-wrap: wrap; */
 }
 
+
+.house111 > * {
+    /* padding: 50px; */
+    /* background-color: green; */
+    /* transition: transform .5s; */
+    /* transition: all .7s ease; */
+     /* Animation */
+     /* overflow: hidden; */
+     /* transform: scale(1.5); */
+     /* transform: scale(); */
+    
+    /* width: 200px;
+    height: 200px;
+    margin: 0 auto; */
+  }
+  
+  .house111 > * img:hover,
+  .house222 > * img:hover,
+  .house333 > * img:hover {
+    /* transform: scale(1.5); */
+     /* (150% zoom)*/
+    /* overflow: hidden; */
+    transform: scale(1.3);
+
+    transition: all .7s ease;
+    /* vertical-align: middle; */
+    /* z-index: -10; */
+
+    transform-origin: 50% 50%;
+  }
+
+  .house111 > * img,
+  .house222 > * img,
+  .house333 > * img {
+    /* transition: transform .7s;  */
+    transition: all .7s ease;
+  }
+
+  
+
 .house111 > *,
 .house222 > *,
 .house333 > * {
     color: black;
-    font-size: 5rem;
+    /* font-size: 8rem; */
     /* background-color: greenyellow; */
     text-align: center;
+
+    overflow: hidden;
 }
 
 
@@ -665,9 +709,14 @@ a:hover {
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(4, 4rem);
     gap: 5rem;
-    background-color: pink;
+    
+    
+    /* color: #001f3f; */
+    color: black;
+    font-weight: 600;
     padding: 3rem;
     border-radius: 2rem;
+    background-color: rgba(252,204,70,.1);
     /* justify-content: space-evenly; */
     /* align-content: start; */
     /* justify-content: center; */
@@ -690,6 +739,8 @@ a:hover {
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 2;
+    /* text-transform: uppercase; */
+    /* font-weight: 600; */
     /* text-align: center; */
     
 }
@@ -767,9 +818,29 @@ a:hover {
     grid-column-end: 11;
     grid-row-start: 3;
     grid-row-end: 5;
+    font-size: 3rem;
     border-radius: 5rem;
     background-color: rgba(28,181,224,.5);
+    transition: color 300ms ease-in-out ;
+    color: #2F4F4F;
 }
+
+/* .open-house:hover, */
+.house-description:hover > .open-house{
+
+    color: #fceed1;
+    background: rgba(203,96,179,.8);
+    -webkit-box-shadow: -2px 5px 40px 6px rgba(0,0,0,0.42);
+    -moz-box-shadow: -2px 5px 40px 6px rgba(0,0,0,0.42);
+    box-shadow: -2px 5px 40px 6px rgba(0,0,0,0.42);
+
+    /* grid-column-start: 1;
+    grid-column-end: 12; */
+
+    transition: color 300ms ease-in-out ;
+    /* padding: 1rem; */
+}
+
 
 
 .house-description__bedrooms-icon img,
