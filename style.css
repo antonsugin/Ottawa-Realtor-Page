@@ -28,8 +28,6 @@ body {
 
 header {
     position: relative;
-    /* width: 100vw; */
-    /* height: 100vh; */
     overflow: hidden;
 }
 
@@ -55,12 +53,8 @@ header {
 }
 
 .logo img {
-    /* max-width: 50%; */
-    /* width: 100%; */
     max-width: 100%;
     height: auto;
-    /* height: 100%; */
-    
 }
 
 @media only screen and (max-width: 650px) {
@@ -136,11 +130,9 @@ a:hover {
 }  
 
 .team-lead p{
-    /* max-height: 100vh; */
     text-align: center;
     font-size: 2.5rem;
     color: #FFE4C4;
-    /* color: black; */
     font-family: 'Sansita Swashed', cursive;
 }
 
@@ -236,14 +228,6 @@ a:hover {
         max-height: 30rem;
         
     }
-        
-    .team-lead__wrapper img  {
-        /* object-fit: cover; */
-        /* margin-top: -3rem; */
-        /* border-radius: 50%; */
-        /* height: 100%; */
-        /* width: 100%; */
-    }
 
     .team-lead__presentation{
         font-size: 2rem;
@@ -300,24 +284,8 @@ a:hover {
     .team-lead__wrapper{
         margin-right: 0rem;
         width: 80%;
-        /* object-fit: contain; */
-        /* height: 100%; */
-        /* border-radius: 50%; */
-
-
-
-
-        /* overflow: hidden; */
     }
         
-    .team-lead__wrapper img  {
-        /* margin-top: -3rem; */
-        /* border-radius: 50%; */
-        /* height: 80%; */
-        /* width: 100%; */
-        /* object-fit: cover; */
-    }
-
     .team-lead__presentation{
         font-size: 1.5rem;
         margin-top: 0rem;
@@ -388,9 +356,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    /* height: 100vh; */
     margin: 0 4rem;
-    /* min-height: 100vh; */
 }
 
 .realtor-one,
@@ -400,8 +366,6 @@ a:hover {
     max-height: 50rem;
     overflow: hidden;
     border-radius: 50%;
-    /* height: 100vh; */
-    
 }
 
 .realtor-one img {
@@ -412,12 +376,6 @@ a:hover {
 .realtor-two img,
 .realtor-three img {
     width: 100%;
-    /* height: auto; */
-    /* border-radius: 50%; */
-}
-
-.realtors-presentation { 
-    /* width: 75%; */
 }
 
 .realtors-presentation p  {
@@ -537,16 +495,13 @@ a:hover {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    /* width: 100%; */
     height: 100vh;
-    /* height: 100%; */
     background-image: url("images/diamond_upholstery.png");
 }
 
 .family-house,
 .bungalow-house,
 .single-family-house {
-    /* width: 30%; */
     flex: 0 0 30%;
     display: flex;
     flex-direction: column;
@@ -555,21 +510,15 @@ a:hover {
 .house-1 > * img:hover,
 .house-2 > * img:hover,
 .house-3 > * img:hover {
-    /* transform: scale(1.5); */
-        /* (150% zoom)*/
-    /* overflow: hidden; */
     transform: scale(1.3);
-
     transition: all .7s ease;
-    /* vertical-align: middle; */
     transform-origin: 50% 50%;
 }
 
 .house-1 > * img,
 .house-2 > * img,
 .house-3 > * img {
-/* transition: transform .7s;  */
-transition: all .7s ease;
+    transition: all .7s ease;
 }
 
   
@@ -578,29 +527,17 @@ transition: all .7s ease;
 .house-2 > *,
 .house-3 > * {
     color: black;
-    /* font-size: 8rem; */
     text-align: center;
     overflow: hidden;
 }
 
-
 .house-1,
 .house-2,
 .house-3 {
-    /* width: 30%; */
     display: grid;
     grid-gap: 1rem;
-    /* justify-content: center; */
-    /* height: fit-content; */
-    
-    /* grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(14, 6rem); */
-    /* grid-template: repeat(14, 6rem) / repeat(11, 1fr); */
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(10, 6rem);
-    /* width: 30%; */
-    /* width: 100%;
-    height: 100vh; */
 }
 
 .front-view {
@@ -615,9 +552,6 @@ transition: all .7s ease;
     object-fit: cover;
     width: 100%;
     height: 100%;
-    /* text-align: center; */
-    /* align-self: center; */
-    /* overflow: hidden; */
 }
 
 .interior-1 img,
@@ -626,7 +560,6 @@ transition: all .7s ease;
 .exterior-1 img,
 .exterior-2 img {
     object-fit: cover;
-    /* object-fit: contain; */
     width: 100%;
     height: 100%;
 }
@@ -690,7 +623,6 @@ transition: all .7s ease;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    /* text-align: center; */
 }
 
 .house-description__area-location {
@@ -698,10 +630,6 @@ transition: all .7s ease;
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 2;
-    /* text-transform: uppercase; */
-    /* font-weight: 600; */
-    /* text-align: center; */
-    
 }
 
 
@@ -712,8 +640,6 @@ transition: all .7s ease;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    
-
 }
 
 .house-description__bedrooms {
@@ -721,8 +647,6 @@ transition: all .7s ease;
     grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 3;
-    
-    /* text-align: center; */
 }
 
 .house-description__date-icon {
@@ -744,7 +668,6 @@ transition: all .7s ease;
     grid-row-end: 2;
     text-align: center;
     transform: translateX(2rem);
-    
 }
 
 .house-description__price-icon {
@@ -755,8 +678,6 @@ transition: all .7s ease;
     grid-row-start: 2;
     grid-row-end: 3;
     transform: translateX(3rem);
-    
-
 }
 
 .house-description__price-amount {
@@ -766,7 +687,6 @@ transition: all .7s ease;
     grid-row-end: 3;
     text-align: center;
     transform: translateX(2rem);
-    
 }
 
 .open-house {
@@ -784,44 +704,40 @@ transition: all .7s ease;
     color: #2F4F4F;
 }
 
-/* .open-house:hover, */
 .house-description:hover > .open-house {
-
     color: #fceed1;
     background: rgba(203,96,179,.8);
     -webkit-box-shadow: -2px 5px 40px 6px rgba(0,0,0,0.42);
     -moz-box-shadow: -2px 5px 40px 6px rgba(0,0,0,0.42);
     box-shadow: -2px 5px 40px 6px rgba(0,0,0,0.42);
-
-    /* grid-column-start: 1;
-    grid-column-end: 12; */
-
     transition: color 300ms ease-in-out ;
-    /* padding: 1rem; */
 }
-
-
 
 .house-description__bedrooms-icon img,
 .house-description__price-icon img,
 .house-description__area-icon img,
 .house-description__date-icon img {
+
     height: 100%;
+    filter: 
+    invert(0.5)
+    sepia(1)
+    hue-rotate(360deg)
+    saturate(10)
+    brightness(1);
 }
 
-.house-description__bedrooms-icon,
-.house-description__price-icon,
-.house-description__area-icon,
-.house-description__date-icon{
-    /* background-color: red; */
-    /* overflow: hidden; */
-    /* color: red; */
-    /* fill: red; */
-    /* filter: invert(0.5) sepia(1) hue-rotate(200deg);      */
-
-
-
-    /* width: 5%; */
+.house-description:hover > .house-description__bedrooms-icon,
+.house-description:hover > .house-description__price-icon,
+.house-description:hover > .house-description__area-icon,
+.house-description:hover > .house-description__date-icon {
+   
+    filter: 
+    invert(0.5)
+    sepia(1)
+    hue-rotate(250deg)
+    saturate(10)
+    brightness(1);
 }
 
 .button-contactRealtor {
@@ -834,7 +750,6 @@ transition: all .7s ease;
     padding: 0.5rem 4rem;
     margin-top: 5rem;
     transition: color 300ms linear;   
-    
     align-self: center;
 }
 
@@ -910,54 +825,11 @@ transition: all .7s ease;
 }
 
 
-/*         chernovik                 */
+
+/*  ************  CONTACT  ***********  */  
 
 
-/* &ldquo; */
-/* &rdquo; */
-      /* .secondborder {
-    background-color: #7d7d7d;
-    background-image: url(images/oriental-tiles.png);
-    display: block;
-    padding: 4%;
-    margin: 1% 0 1% 0;
-    margin-top: 5rem;
-    border-radius: 50% ;
-    -moz-border-radius: 50% ;
-    -webkit-border-radius: 50% ;
-    border: 1px solid #000;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
 
-    
-.borderedpicture {
-    background-color: #7d7d7d;
-    background-image: url(images/more-leaves-on-green.png);
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    size: cover;
-    padding: 2%;
-    margin: 0;
-    border-radius: 50% ;
-    -moz-border-radius: 50% ;
-    -webkit-border-radius: 50% ;
-    border: 1px solid #61201e;
-    -webkit-box-shadow: 0px 0px 60px -9px rgba(0,0,0,1);
-    -moz-box-shadow: 0px 0px 60px -9px rgba(0,0,0,1);
-    box-shadow: 0px 0px 60px -9px rgba(0,0,0,1);
-    } */
 
-    /* <!-- <img src="images/Sales Team/Olivia Labossière/Original.jpg" alt="team lead photo" class="team-lead"> -->
 
-    <!-- <div class="klara">
-        <img src="images/Sales Team/Olivia Labossière/Original.jpg" alt="team lead photo" class="team-lead">
-    </div> -->
-    <!-- <div class="secondborder klara">
-        <div class="borderedpicture">
-            <img src="images/Sales Team/Olivia Labossière/Small.jpg" alt="team lead photo" class="team-lead">
-        </div> -->
-        
-        <!-- <img src="images/Sales Team/Olivia Labossière/Small.jpg" alt="team lead photo" class="team-lead borderedpicture"> -->
-    <!-- </div> --> */
+
