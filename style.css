@@ -381,6 +381,7 @@ a:hover {
 .realtors-presentation p  {
     text-align: center;
     font-size: 2.5rem;
+    /* line-height: 150%; */
     color: #DDDDDD;
     font-family: 'Sansita Swashed', cursive;
 } 
@@ -497,7 +498,7 @@ a:hover {
     flex-wrap: wrap;
     /* height: 100vh; */
     height: 100%;
-    background-image: url("images/diamond_upholstery.png");
+    background-image: url("images/Houses/diamond_upholstery.png");
 }
 
 .family-house,
@@ -847,6 +848,7 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     /* flex-wrap: wrap; */
+    /* height: 40%; */
 }
 
 .contact-wrapper > * {
@@ -977,3 +979,106 @@ textarea {
 }
 
 
+
+/*  ************  FOOTER  ***********  */  
+
+footer {
+    /* height: 55%; */
+}
+.footer-wrapper {
+    /* margin: 0 auto; */
+    background-color: burlywood;
+    /* height: 100%; */
+    
+   
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    
+}
+
+.footer-nav > * {
+    margin: 20rem 0;
+}
+
+.footer-media {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(2, 2rem);
+    /* align-items: center; */
+}
+
+.footer-media__facebook {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /* height: 100%; */
+}
+
+.footer-media__facebook img,
+.footer-media__instagram img,
+.footer-media__twitter img,
+.footer-media__youtube img,
+.footer-media__linkedin img {
+    height: 100%;
+}
+
+.footer-media__instagram {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.footer-media__twitter {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.footer-media__youtube {
+    grid-column-start: 8;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.footer-media__linkedin {
+    grid-column-start: 10;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.footer-info > * {
+    /* margin-right: 5rem; */
+}
+
+.footer-info__address {
+    padding-right: 2.5rem;
+}
+
+.footer-info__phone {
+    padding: 0 2.5rem;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.footer-info__email {
+    padding-left: 2.5rem;
+}
