@@ -529,7 +529,8 @@ a:hover {
 .house-1 > *,
 .house-2 > *,
 .house-3 > * {
-    color: black;
+    /* color: black; */
+    /* color: red; */
     text-align: center;
     overflow: hidden;
 }
@@ -611,7 +612,9 @@ a:hover {
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(4, 4rem);
     gap: 5rem;
-    color: black;
+    /* color: black; */
+    /* color: red; */
+    color: #4F545F;
     font-weight: 600;
     padding: 3rem;
     border-radius: 2rem;
@@ -833,15 +836,25 @@ a:hover {
 
 /*  ************  CONTACT  ***********  */  
 
-
+.contact {
+    /* font-family: 'Sansita Swashed', cursive; */
+    /* color: #4F545F; */
+    /* letter-spacing: .5rem; */
+}
 
 h2 {
+    letter-spacing: .5rem;
     font-size: 6rem;
-    /* margin: 0 auto; */
-    text-align: center;
+    margin: 0 auto;
+    color: #4F545F;
+    /* text-align: center; */
     margin-top: 5rem;
     font-weight: 500;
-
+    border-bottom: 1px solid #4F545F;;
+    width: fit-content;
+    /* display: inline-block; */
+    font-family: 'Sansita Swashed', cursive;
+    
 }
 
 .contact-wrapper {
@@ -861,17 +874,19 @@ h2 {
 
 
 .contact-form form > * {
+    font-family: 'Sansita Swashed', cursive;
     /* width: 49%; */
     margin: 2rem 0;
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: space-between;
     align-items: center;
+    color: #4F545F;
 }
 
 .contact-form {
     width: 65%;
-    
+    letter-spacing: .3rem; 
 }
 
 .contact-input {
@@ -884,24 +899,59 @@ h2 {
 
 }
 
+
+
+
+
 input[type=text],
 input[type=email],
 select, 
 textarea
  {
+    letter-spacing: .2rem;
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    color: #4F545F;
+    /* background-color: indigo; */
+    outline: none;
+    
     /* resize: vertical; */
 }
+
+input[type=text]:focus {
+    /* border: none; */
+    box-shadow: 0px 9px 61px 2px rgba(0,255,38,.4);
+    /* background-color: hotpink; */
+}
+
+input[type=text]:active {
+    /* background-color: indigo; */
+}
+
+input[type=text]:required {
+    content: "required";
+    /* background-color: indigo; */
+}
+
+input[type=text]:required:valid {
+    border-color: green;
+  }
+
+
 
 textarea {
     /* width: 100%; */
     height: 15rem;
 }
 
+
+
+
 .contact-submit div {
+    /* letter-spacing: .5rem; */
+    font-family: 'Montserrat', sans-serif;
     color: #fceed1;
     font-size: 3rem;
     font-weight: 600; 
@@ -913,44 +963,27 @@ textarea {
     cursor: pointer;
     padding: 0.5rem 4rem;
     /* margin-top: 2rem; */
-    transition: color 300ms linear;
+    /* transition: color 300ms linear; */
+    transition: all .2s ease-in-out;
     margin: 0 auto;
     border-radius: 5rem;
 }
 
 .contact-submit div:hover {
-    /* color: #4F545F;
-    background-color: #F7DDA4; */
-    -webkit-transition: color 300ms linear;
-    -ms-transition: color 300ms linear;
-    transition: color 300ms linear;
-    -webkit-box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
-    -moz-box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
-    box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
+    font-size: 3.1rem;
+    -webkit-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -webkit-box-shadow: 0px 9px 61px 2px rgba(0,255,38,.4);
+    -moz-box-shadow: 0px 9px 61px 2px rgba(0,255,38,.4);
+    box-shadow: 0px 9px 61px 2px rgba(0,255,38,.4);
 }
 
-/* .contact-submit div {
-    color: #fceed1;
-    font-size: 3.5rem; 
-    letter-spacing: .5rem;
-    background-color: #B89068;
-    display: inline-block;
-    cursor: pointer;
-    padding: .5rem 4rem;
-    margin: 0 auto;
-    transition: color 300ms linear;  
-
-    margin-top: 5rem;
-    align-self: center;
-    text-align: center;
-} */
 
 .contact-submit div span {
     padding-left: 3rem;
     font-size: 4rem ;
 }
-
-
 
 .contact-form form {
     grid-column-start: 2;
@@ -987,7 +1020,7 @@ textarea {
 
 
 footer {
-    padding-top: 10rem;
+    padding-top: 5rem;
     padding-bottom: 7rem;
     background-color: #B89068;
     color: white;
@@ -1116,7 +1149,7 @@ footer {
     text-align: center;
     font-size: 2rem;
     /* padding: 3rem 0; */
-    padding-top: 7rem;
-    padding-bottom: 2rem;
+    padding-top: 6rem;
+    /* padding-bottom: 2rem; */
 }
 
