@@ -23,6 +23,10 @@ body {
     
 }
 
+a {
+    text-decoration: none;
+}
+
 
 
 
@@ -75,15 +79,14 @@ header {
     font-size: 2rem;
 }
 
-a {
+.nav-a {
     color: #B89068;
-    text-decoration: none;
     letter-spacing: .5rem;
     padding: 1rem 2rem;
     text-align: center;
 }
 
-a:hover {
+.nav-a:hover {
     color: #4F545F;
     background-color: #F7DDA4;
     border: 2px solid goldenrod;
@@ -166,7 +169,8 @@ a:hover {
     transition: color 300ms linear;
 }
 
-.button-contactUs:hover {
+.button-contactUs:hover
+ {
     color: #4F545F;
     background-color: #F7DDA4;
     -webkit-transition: color 300ms linear;
@@ -436,7 +440,7 @@ a:hover {
 
      /*  ************  REALTORS  ***********  */
     
-    /* .realtors{
+    .realtors{
         padding: 0;
         padding-top:  3rem;
         height: auto;
@@ -487,7 +491,7 @@ a:hover {
     .button-contactMe span {
         padding-left: 2rem;
         font-size: 3rem ;
-    } */
+    }
 
 
   }
