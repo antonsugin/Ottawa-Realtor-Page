@@ -100,7 +100,8 @@ header {
 
 .team-lead {
     width: 25%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    height: fit-content;
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -121,6 +122,8 @@ header {
     object-fit: cover;
     height: 100%;
     border-radius: 50%;
+    max-width: 50rem;
+    max-height: 50rem;
 }
 
 .team-lead__presentation:hover > 
@@ -930,6 +933,13 @@ footer {
 }
 
 
+
+@media only screen and (max-width: 2200px) {
+    .team-lead p > * {
+        font-size: 5rem;
+    }
+}
+
 @media only screen and (max-width: 2020px) {
 
     /*  ************  HEADER  ***********  */
@@ -945,12 +955,10 @@ footer {
     /*  ************  HEADER  ***********  */
     .team-lead__presentation-entity,
     .realtor__presentation-entity {
-        
         font-size: 7rem;
     }  
 
     .team-lead p{
-        
         font-size: 2rem;
         
     }
@@ -970,11 +978,14 @@ footer {
 
     .navigation {
         font-size: 1.5rem;
-        /* margin-right: 2.5rem; */
-        /* width: 65%; */
     }
 
     .team-lead__wrapper{
+        max-width: 40rem;
+        max-height: 40rem;
+        
+    }
+    .team-lead__wrapper img{
         max-width: 40rem;
         max-height: 40rem;
         
@@ -993,7 +1004,6 @@ footer {
     .navigation {
         font-size: 1.7rem;
         margin-right: 2.5rem;
-        /* width: 65%; */
     }
 
 
@@ -1153,8 +1163,6 @@ footer {
 
     .navigation {
         font-size: 1.2rem;
-        /* margin-right: 2.5rem; */
-        /* width: 65%; */
     }
 
     .team-lead__presentation span.team-lead__name,
@@ -1173,8 +1181,6 @@ footer {
 
     .navigation {
         font-size: 1rem;
-        /* margin-right: 2.5rem; */
-        /* width: 65%; */
     }
 
     .team-lead__presentation span.team-lead__name,
@@ -1200,37 +1206,42 @@ footer {
     /*  ************  HEADER  ***********  */
 
     .navigation {
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: 600;
         width: 100%;
-        /* display: none; */
     }
 
     .logo {
-        /* display: none; */
-        /* top: 55vh;
-        left: 25vw; */
-        width: 50rem;
-        height: 50rem;
-        top: calc(100vh - 45vh);
-        left: calc(100vw - 75vw);
+        display: none;
     }
-    /* .team-lead__wrapper{
-        margin-right: 0rem;
-        width: 80%;
-    } */
+
+    .header-wrapper{
+        display: block;
+    }
+
+    .team-lead {
+        margin-top: 10rem;
+        width: 100%;
+        height: fit-content;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
 
     .team-lead__wrapper{
         max-width: 25rem;
         max-height: 25rem;
-        /* flex-direction: column; */
-        
+        align-self: center;
+    }
+
+    .team-lead__wrapper img{
+        max-height: 25rem;
     }
         
     .team-lead__presentation{
         font-size: 1.5rem;
         margin-top: 0rem;
-        width: 100%;
+        width: 50%;
     }
 
     .team-lead__presentation span.realtor-name__question {
@@ -1251,7 +1262,10 @@ footer {
     }
 
     .header-slogan {
-        top: 40vh;
+        top: calc(100vh - 30vh);
+        left: calc(100vw - 50vw);
+        width: 100%;
+        text-align: center;
     }
     
     .header-slogan h1 {
@@ -1277,20 +1291,69 @@ footer {
   }  
 
 
-  @media only screen and (max-width: 1220px) {
+  @media only screen and (max-width: 600px) {
 
     /*  ************  HEADER  ***********  */
 
     .team-lead__presentation span.team-lead__name,
     .team-lead__presentation span.team-lead__dream {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
-    .team-lead p {
-        font-size: 1.3rem;
+    .team-lead__wrapper{
+        max-width: 15rem;
+        max-height: 15rem;
+        align-self: center;
     }
 
+    .team-lead__wrapper img{
+        max-height: 15rem;
+    }
+
+    .team-lead p > * {
+        font-size: 2rem;
+    }  
+
+    .header-slogan {
+        padding-top: 10rem;
+    }
+    .header-slogan h1 {
+        font-size: 3.5rem;
+    }
+    
+    .button-contactUs {
+        font-size: 1.7rem;
+    }
+
+    .header-slogan .button-contactUs span {
+        font-size: 2.5rem ;
+    }
   }
+
+  @media only screen and (max-width: 600px) {
+
+    .navigation{
+        display: none;
+    }
+
+    .team-lead {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .team-lead__wrapper {
+        align-self: flex-end;
+    }
+
+    .logo {
+        display: block;
+        width: 15rem;
+        height: 15rem;
+        margin-left: 3rem;
+    }
+
+}
 
 
 
