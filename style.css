@@ -1181,6 +1181,7 @@ footer {
 
     .navigation {
         font-size: 1rem;
+        font-weight: 600;
     }
 
     .team-lead__presentation span.team-lead__name,
@@ -1295,42 +1296,12 @@ footer {
 
     /*  ************  HEADER  ***********  */
 
-    .team-lead__presentation span.team-lead__name,
-    .team-lead__presentation span.team-lead__dream {
-        font-size: 1.8rem;
+    .logo {
+        display: block;
+        width: 15rem;
+        height: 15rem;
+        margin-left: 3rem;
     }
-
-    .team-lead__wrapper{
-        max-width: 15rem;
-        max-height: 15rem;
-        align-self: center;
-    }
-
-    .team-lead__wrapper img{
-        max-height: 15rem;
-    }
-
-    .team-lead p > * {
-        font-size: 2rem;
-    }  
-
-    .header-slogan {
-        padding-top: 10rem;
-    }
-    .header-slogan h1 {
-        font-size: 3.5rem;
-    }
-    
-    .button-contactUs {
-        font-size: 1.7rem;
-    }
-
-    .header-slogan .button-contactUs span {
-        font-size: 2.5rem ;
-    }
-  }
-
-  @media only screen and (max-width: 600px) {
 
     .navigation{
         display: none;
@@ -1342,17 +1313,52 @@ footer {
         margin-top: 0;
     }
 
-    .team-lead__wrapper {
+    .team-lead__presentation span.team-lead__name,
+    .team-lead__presentation span.team-lead__dream {
+        font-size: 1.8rem;
+    }
+
+    .team-lead__wrapper{
+        max-width: 15rem;
+        max-height: 15rem;
         align-self: flex-end;
     }
 
-    .logo {
-        display: block;
-        width: 15rem;
-        height: 15rem;
-        margin-left: 3rem;
+    .team-lead__wrapper img{
+        max-height: 15rem;
     }
 
+    .team-lead p > * {
+        font-size: 2rem;
+    }  
+
+    .header-slogan {
+        margin-top: 10rem;
+
+    }
+    .header-slogan h1 {
+        font-size: 3.5rem;
+        line-height: 1.8;
+    }
+    
+    .button-contactUs {
+        font-size: 1.7rem;
+    }
+
+    .header-slogan .button-contactUs span {
+        font-size: 2.5rem ;
+    }
+  }
+
+
+@media only screen and (max-width: 420px) {
+    .team-lead p  {
+        display: none;
+    }
+
+    .header-slogan {
+        margin-top: 0;
+    }
 }
 
 
