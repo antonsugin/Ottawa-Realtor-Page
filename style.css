@@ -33,12 +33,14 @@ a {
 /*  ************  HEADER  ***********  */
 
 
+
 header {
     position: relative;
     overflow: hidden;
 }
 
 .header-wrapper {
+    
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -64,12 +66,12 @@ header {
     height: auto;
 }
 
-@media only screen and (max-width: 650px) {
+/* @media only screen and (max-width: 650px) {
     .logo {
         width: 20rem;
         height: 20rem;
     }
-} 
+}  */
 
 .navigation {
     display: flex;
@@ -77,6 +79,7 @@ header {
     width: 57%;
     height: fit-content;
     font-size: 2rem;
+    
 }
 
 .nav-a {
@@ -203,7 +206,8 @@ header {
   }
 
   
-  .team-lead__presentation span.team-lead__name {
+  .team-lead__presentation span.team-lead__name,
+  .team-lead__presentation span.team-lead__dream {
     font-size: 4rem; 
     color: #F7DDA4;
 }
@@ -216,127 +220,7 @@ header {
 
 
 
-  @media only screen and (max-width: 1550px) {
-
-    /*  ************  HEADER  ***********  */
-
-    .logo {
-        margin-top: 4rem;
-    }
-
-    .navigation {
-        font-size: 1.7rem;
-        margin-right: 2.5rem;
-        /* width: 65%; */
-    }
-
-    .team-lead__wrapper{
-        max-width: 30rem;
-        max-height: 30rem;
-        
-    }
-
-    .team-lead__presentation{
-        font-size: 2rem;
-        margin-top: 0rem;
-        width: 100%;
-    }
-
-    .team-lead__presentation span.team-lead__dream {
-        font-size: 2rem;
-    }
-    .team-lead__presentation span.team-lead__name {
-        font-size: 2.5rem;
-    }
-
-    .team-lead__presentation-entity {
-        font-size: 3rem;
-    }  
-
-    .header-slogan {
-        top: 65%;
-        left: 45%;
-    }
-    
-    .header-slogan h1 {
-        font-size: 6.5rem;
-        line-height: 1;
-    }
-    
-    .button-contactUs {
-        letter-spacing: .5rem;
-        padding: .5rem 2.5rem;
-        font-size: 2rem;
-    }
-
-    .header-slogan .button-contactUs span {
-        padding-left: 2rem;
-        font-size: 3rem ;
-    }
-
-  }  
-
   
-
-  @media only screen and (max-width: 1200px) {
-
-    /*  ************  HEADER  ***********  */
-
-    .navigation {
-        font-size: 1rem;
-        font-weight: 600;
-        width: 100%;
-    }
-
-    .team-lead__wrapper{
-        margin-right: 0rem;
-        width: 80%;
-    }
-        
-    .team-lead__presentation{
-        font-size: 1.5rem;
-        margin-top: 0rem;
-        width: 100%;
-    }
-
-    .team-lead__presentation span.realtor-name__question {
-        font-size: 1.6rem;
-    }
-    .team-lead__presentation span.realtor-name {
-        font-size: 1.8rem;
-    }
-
-    .team-lead__presentation-entity {
-        font-size: 3rem;
-        margin-left: 1rem;
-    }  
-
-    .header-slogan {
-        top: 60vh;
-    }
-    
-    .header-slogan h1 {
-        font-size: 4.5rem;
-        line-height: 1;
-    }
-    
-    .button-contactUs {
-        letter-spacing: .5rem;
-        padding: .5rem 2.5rem;
-        font-size: 2rem;
-    }
-
-    .header-slogan .button-contactUs span {
-        padding-left: 2rem;
-        font-size: 3rem ;
-    }
-
-
-    /*  ************  REALTORS  ***********  */ 
-
-
-  }  
-
 
 
  /*  ************  REALTORS  ***********  */ 
@@ -433,68 +317,6 @@ header {
     font-size: 3rem;
     color: #F7DDA4;
 }
-
-
-@media only screen and (max-width: 1550px) {
-
-
-     /*  ************  REALTORS  ***********  */
-    
-    .realtors{
-        padding: 0;
-        padding-top:  3rem;
-        height: auto;
-    } 
-
-     .realtor-one,
-     .realtor-two,
-     .realtor-three {
-         max-width: 25rem;
-         max-height: 25rem;
-     }
-
-     .realtor-one img {
-        margin-top: -6rem;
-    }
- 
-
-    .realtor__presentation{
-        font-size: 2rem;
-        
-        width: 100%;
-    }
- 
-     .realtor__presentation span.realtor-name {
-         font-size: 2.5rem; 
-         
-     }
-     
-     .realtor__presentation span.realtor-name__question {
-         font-size: 2rem;
-         
-     }
-
-     .realtor__presentation-entity {
-        font-size: 3rem;
-        
-    }  
-    
-
-     .button-contactMe {
-        letter-spacing: .5rem;
-        padding: .5rem 2.5rem;
-        font-size: 2rem;
-        margin-top: 3rem;
-        margin-bottom: 6.5rem;
-    }
-
-    .button-contactMe span {
-        padding-left: 2rem;
-        font-size: 3rem ;
-    }
-
-
-  }
 
 
 
@@ -784,62 +606,6 @@ header {
 .button-contactRealtor span {
     padding-left: 3rem;
     font-size: 5rem ;
-}
-
-
-@media only screen and (max-width: 1550px) {
-
-    .houses {
-        padding-top: 2rem;
-        height: 100%;
-    }
-
-    .family-house,
-    .bungalow-house,
-    .single-family-house {
-        flex: 0 0 20%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .house-1,
-    .house-2,
-    .house-3 {
-        display: grid;
-        grid-gap: 1rem;
-        grid-template-columns: repeat(11, 1fr);
-        grid-template-rows: repeat(10, 3rem);
-    }
-
-    .house-description {
-        margin-top: 1rem;
-        font-size: 1.5rem;
-        display: grid;
-        grid-template-columns: repeat(11, 1fr);
-        grid-template-rows: repeat(4, 2rem);
-        gap: 3rem;
-    }
-
-    .open-house {
-        font-size: 1.5rem;
-        grid-column-start: 1;
-        grid-column-end: 12;
-        grid-row-start: 3;
-        grid-row-end: 5;
-    }
-
-    .button-contactRealtor {
-        letter-spacing: .5rem;
-        padding: .5rem 2.5rem;
-        font-size: 2rem;
-        margin-top: 2rem;
-        margin-bottom: 2.5rem;
-    }
-
-    .button-contactRealtor span {
-        padding-left: 2rem;
-        font-size: 3rem ;
-    }
 }
 
 
@@ -1164,102 +930,368 @@ footer {
 }
 
 
+@media only screen and (max-width: 2020px) {
+
+    /*  ************  HEADER  ***********  */
+    .header-slogan h1 {
+        font-size: 7.5rem;
+    }    
 
 
-
-/* .realtor {
-    height: 100%;
-    display: grid;
-    
-    grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(22, 6rem);
-    
 }
 
-.realtor-one,
-.realtor-two,
-.realtor-three {
-    grid-column-start:2 ;
-    grid-column-end:10 ;
-    grid-row-start:2 ;
-    grid-row-end:10 ;
-    
-    overflow: hidden;
-    border-radius: 50%;
-    
+@media only screen and (max-width: 1720px) {
+
+    /*  ************  HEADER  ***********  */
+    .team-lead__presentation-entity,
+    .realtor__presentation-entity {
+        
+        font-size: 7rem;
+    }  
+
+    .team-lead p{
+        
+        font-size: 2rem;
+        
+    }
+
+    .team-lead__presentation span.team-lead__name,
+    .team-lead__presentation span.team-lead__dream {
+        font-size: 3.5rem;
+    }
 }
 
-.realtor-one img,
-.realtor-two img,
-.realtor-three img {
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-    
+@media only screen and (max-width: 1640px) {
+
+    /*  ************  HEADER  ***********  */
+    .header-slogan h1 {
+        font-size: 7rem;
+    }    
+
+    .navigation {
+        font-size: 1.5rem;
+        /* margin-right: 2.5rem; */
+        /* width: 65%; */
+    }
+
+    .team-lead__wrapper{
+        max-width: 40rem;
+        max-height: 40rem;
+        
+    }
 }
 
-.realtors-presentation {
-    grid-column-start:3 ;
-    grid-column-end:10 ;
-    grid-row-start:9 ;
-    grid-row-end:16 ;
+
+@media only screen and (max-width: 1550px) {
+
+    /*  ************  HEADER  ***********  */
+
+    .logo {
+        margin-top: 4rem;
+    }
+
+    .navigation {
+        font-size: 1.7rem;
+        margin-right: 2.5rem;
+        /* width: 65%; */
+    }
+
+
+    .header-slogan {
+        top: 65%;
+        left: 45%;
+    }
     
-    text-align: center;
-    line-height: 1.8;
-}
-
-.button-contactMe {
-    grid-column-start:3 ;
-    grid-column-end:10 ;
-    grid-row-start:20 ;
-    grid-row-end:22 ;
-    align-self: center;
-}
-
-.realtors-presentation p  {
-   
-    font-size: 2.5rem;
+    .header-slogan h1 {
+        font-size: 6.5rem;
+        line-height: 1;
+    }
     
-    color: #DDDDDD;
-    font-family: 'Sansita Swashed', cursive;
-} 
+    .button-contactUs {
+        letter-spacing: .5rem;
+        padding: .5rem 2.5rem;
+        font-size: 2rem;
+    }
 
-.button-contactMe {
-    color: #fceed1;
-    font-size: 3.5rem; 
-    letter-spacing: .5rem;
-    background-color: #B89068;
+    .header-slogan .button-contactUs span {
+        padding-left: 2rem;
+        font-size: 3rem ;
+    }
+
+    /*  ************  REALTORS  ***********  */
     
-    cursor: pointer;
-    padding: 0.5rem 4rem;
+    .realtors{
+        padding: 0;
+        padding-top:  3rem;
+        height: auto;
+    } 
+
+     .realtor-one,
+     .realtor-two,
+     .realtor-three {
+         max-width: 25rem;
+         max-height: 25rem;
+     }
+
+     .realtor-one img {
+        margin-top: -6rem;
+    }
+ 
+
+    .realtor__presentation{
+        font-size: 2rem;
+        
+        width: 100%;
+    }
+ 
+     .realtor__presentation span.realtor-name {
+         font-size: 2.5rem; 
+         
+     }
+     
+     .realtor__presentation span.realtor-name__question {
+         font-size: 2rem;
+         
+     }
+
+     .realtor__presentation-entity {
+        font-size: 3rem;
+        
+    }  
     
-    transition: color 300ms linear;  
+
+     .button-contactMe {
+        letter-spacing: .5rem;
+        padding: .5rem 2.5rem;
+        font-size: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 6.5rem;
+    }
+
+    .button-contactMe span {
+        padding-left: 2rem;
+        font-size: 3rem ;
+    }
+
+
+    /*  ************  HOUSES  ***********  */
+
+    .houses {
+        padding-top: 2rem;
+        height: 100%;
+    }
+
+    .family-house,
+    .bungalow-house,
+    .single-family-house {
+        flex: 0 0 20%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .house-1,
+    .house-2,
+    .house-3 {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(11, 1fr);
+        grid-template-rows: repeat(10, 3rem);
+    }
+
+    .house-description {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        grid-template-rows: repeat(4, 2rem);
+        gap: 3rem;
+    }
+
+    .open-house {
+        font-size: 1.5rem;
+        grid-column-start: 1;
+        grid-column-end: 12;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+
+    .button-contactRealtor {
+        letter-spacing: .5rem;
+        padding: .5rem 2.5rem;
+        font-size: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .button-contactRealtor span {
+        padding-left: 2rem;
+        font-size: 3rem ;
+    }
+
+    /*  ************  CONTACT  ***********  */
+
+
+
+
+    /*  ************  FOOTER  ***********  */  
+
+
+
+  }  
+
+  @media only screen and (max-width: 1520px) {
+
+    /*  ************  HEADER  ***********  */
+    .header-slogan h1 {
+        font-size: 6rem;
+    }    
+
+    .header-slogan {
+        top: 65%;
+        left: 30%;
+    }
+
+    .navigation {
+        font-size: 1.2rem;
+        /* margin-right: 2.5rem; */
+        /* width: 65%; */
+    }
+
+    .team-lead__presentation span.team-lead__name,
+    .team-lead__presentation span.team-lead__dream {
+        font-size: 3.2rem;
+    }
+
+  }
+
+  @media only screen and (max-width: 1410px) {
+
+    /*  ************  HEADER  ***********  */
+    .header-slogan h1 {
+        font-size: 5rem;
+    }    
+
+    .navigation {
+        font-size: 1rem;
+        /* margin-right: 2.5rem; */
+        /* width: 65%; */
+    }
+
+    .team-lead__presentation span.team-lead__name,
+    .team-lead__presentation span.team-lead__dream {
+        font-size: 3rem;
+    }
+
+  }
+  
+
+  @media only screen and (max-width: 1410px) {
+
+    /*  ************  HEADER  ***********  */
+    .team-lead__presentation span.team-lead__name,
+    .team-lead__presentation span.team-lead__dream {
+        font-size: 2.5rem;
+    }
+
+  }
+
+  @media only screen and (max-width: 1220px) {
+
+    /*  ************  HEADER  ***********  */
+
+    .navigation {
+        font-size: 1rem;
+        font-weight: 600;
+        width: 100%;
+        /* display: none; */
+    }
+
+    .logo {
+        /* display: none; */
+        /* top: 55vh;
+        left: 25vw; */
+        width: 50rem;
+        height: 50rem;
+        top: calc(100vh - 45vh);
+        left: calc(100vw - 75vw);
+    }
+    /* .team-lead__wrapper{
+        margin-right: 0rem;
+        width: 80%;
+    } */
+
+    .team-lead__wrapper{
+        max-width: 25rem;
+        max-height: 25rem;
+        /* flex-direction: column; */
+        
+    }
+        
+    .team-lead__presentation{
+        font-size: 1.5rem;
+        margin-top: 0rem;
+        width: 100%;
+    }
+
+    .team-lead__presentation span.realtor-name__question {
+        font-size: 1.6rem;
+    }
+    .team-lead__presentation span.realtor-name {
+        font-size: 1.8rem;
+    }
+
+    .team-lead__presentation-entity {
+        font-size: 3rem;
+        margin-left: 1rem;
+    }  
+
+    .team-lead__presentation span.team-lead__name,
+    .team-lead__presentation span.team-lead__dream {
+        font-size: 2rem;
+    }
+
+    .header-slogan {
+        top: 40vh;
+    }
     
+    .header-slogan h1 {
+        font-size: 4.5rem;
+        line-height: 1;
+    }
     
-}
+    .button-contactUs {
+        letter-spacing: .5rem;
+        padding: .5rem 2.5rem;
+        font-size: 2rem;
+    }
 
-.button-contactMe:hover {
-    color: #4F545F;
-    background-color: #F7DDA4;
-    -webkit-transition: color 300ms linear;
-    -ms-transition: color 300ms linear;
-    transition: color 300ms linear;
-    -webkit-box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
-    -moz-box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
-    box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
-}
+    .header-slogan .button-contactUs span {
+        padding-left: 2rem;
+        font-size: 3rem ;
+    }
 
-.button-contactMe span {
-    padding-left: 3rem;
-    font-size: 5rem ;
-}
 
-.realtor__presentation span.realtor-name {
-    font-size: 4rem; 
-    color: #F7DDA4;
-}
+    /*  ************  REALTORS  ***********  */ 
 
-.realtor__presentation span.realtor-name__question {
-    font-size: 3rem;
-    color: #F7DDA4;
-}  */
+
+  }  
+
+
+  @media only screen and (max-width: 1220px) {
+
+    /*  ************  HEADER  ***********  */
+
+    .team-lead__presentation span.team-lead__name,
+    .team-lead__presentation span.team-lead__dream {
+        font-size: 1.5rem;
+    }
+
+    .team-lead p {
+        font-size: 1.3rem;
+    }
+
+  }
+
+
+
+
