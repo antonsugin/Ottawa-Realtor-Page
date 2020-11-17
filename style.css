@@ -807,14 +807,6 @@ footer {
     font-weight: 600;
 }
 
-.footer-wrapper {
-    /* margin: 0 auto; */
-    /* background-color: burlywood; */
-    /* height: 100%; */
-    
-   
-}
-
 .footer-nav {
     display: flex;
     justify-content: space-between;  
@@ -905,10 +897,6 @@ footer {
     font-size: 3rem;
 }
 
-.footer-info > * {
-    /* margin-right: 5rem; */
-    
-}
 
 .footer-info__address {
     padding-right: 2.5rem;
@@ -927,32 +915,124 @@ footer {
 .footer-copyright {
     text-align: center;
     font-size: 2rem;
-    /* padding: 3rem 0; */
     padding-top: 6rem;
-    /* padding-bottom: 2rem; */
 }
 
 
 
 @media only screen and (max-width: 2200px) {
+
+    /*  ************  HEADER  ***********  */
+
     .team-lead p > * {
         font-size: 5rem;
     }
+
+    /*  ************  REALTORS  ***********  */
+    
+    .realtors{
+        padding: 0;
+        padding-top:  3rem;
+        height: auto;
+    } 
+
+    .realtor-one,
+    .realtor-two,
+    .realtor-three {
+        max-width: 40rem;
+        max-height: 40rem;
+    }
+
+    .realtor-one img {
+        margin-top: -6rem;
+    }
+ 
+    .realtor__presentation{
+        font-size: 2rem;
+        width: 100%;
+    }
+ 
+    .realtor__presentation span.realtor-name {
+        font-size: 2.5rem; 
+         
+    }
+     
+    .realtor__presentation span.realtor-name__question {
+        font-size: 2rem;
+         
+    }
+
+    .realtor__presentation-entity {
+        font-size: 4rem;
+        
+    }  
+    
+    .button-contactMe {
+        letter-spacing: .5rem;
+        padding: .5rem 2.5rem;
+
+        font-size: 2.5rem;
+
+        margin-top: 3rem;
+        margin-bottom: 6.5rem;
+    }
+
+    .button-contactMe span {
+        padding-left: 2.5rem;
+        font-size: 3rem ;
+    }
+
+
+    /*  ************  HOUSES  ***********  */
+
+    .open-house {
+        font-size: 2.5rem;
+        grid-column-start: 1;
+        grid-column-end: 12;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+
+
+    /*  ************  FOOTER  ***********  */  
+    .footer-info {
+        font-size: 2.5rem;
+    }
+
 }
+
 
 @media only screen and (max-width: 2020px) {
 
     /*  ************  HEADER  ***********  */
+
     .header-slogan h1 {
         font-size: 7.5rem;
     }    
 
+    /*  ************  FOOTER  ***********  */  
+
+    .footer-info {
+        font-size: 2rem;
+    }
+
+    .footer-copyright {
+        font-size: 1.7rem;
+    }
+
+    /*  ************  CONTACT  ***********  */
+
+    .contact-label {
+        font-size: 1.8rem;
+    }
 
 }
+
 
 @media only screen and (max-width: 1720px) {
 
     /*  ************  HEADER  ***********  */
+
     .team-lead__presentation-entity,
     .realtor__presentation-entity {
         font-size: 7rem;
@@ -967,11 +1047,37 @@ footer {
     .team-lead__presentation span.team-lead__dream {
         font-size: 3.5rem;
     }
+
+
+    /*  ************  HOUSES  ***********  */
+
+    .open-house {
+        font-size: 2.2rem;
+    }
+
+    .button-contactRealtor {
+        margin-top: 2rem;
+        margin-bottom: 2.5rem;
+    }
+
+
+    /*  ************  FOOTER  ***********  */  
+
+    .footer-info {
+        font-size: 1.7rem;
+    }
+
+    .footer-copyright {
+        font-size: 1.4rem;
+    }
+
 }
+
 
 @media only screen and (max-width: 1640px) {
 
     /*  ************  HEADER  ***********  */
+
     .header-slogan h1 {
         font-size: 7rem;
     }    
@@ -988,7 +1094,40 @@ footer {
     .team-lead__wrapper img{
         max-width: 40rem;
         max-height: 40rem;
-        
+    }
+
+
+    /*  ************  CONTACT  ***********  */
+
+    .contact-form {
+        width: 80%;
+    }
+
+    .contact-form form {
+        font-size: 2rem;
+    }
+
+    .contact-logo {
+        grid-template-rows: repeat(6,10rem);
+        align-self: center;
+    }
+
+    .contact-submit div {
+        font-size: 2rem;
+    }
+
+    .contact-submit div span {
+        font-size: 3rem;
+    }
+
+    /*  ************  FOOTER  ***********  */  
+
+    .footer-info {
+        font-size: 1.5rem;
+    }
+
+    .footer-copyright {
+        font-size: 1.2rem;
     }
 }
 
@@ -1005,7 +1144,6 @@ footer {
         font-size: 1.7rem;
         margin-right: 2.5rem;
     }
-
 
     .header-slogan {
         top: 65%;
@@ -1028,58 +1166,24 @@ footer {
         font-size: 3rem ;
     }
 
-    /*  ************  REALTORS  ***********  */
+     /* ************  REALTORS  ***********  */
     
-    .realtors{
-        padding: 0;
-        padding-top:  3rem;
-        height: auto;
-    } 
-
-     .realtor-one,
-     .realtor-two,
-     .realtor-three {
-         max-width: 25rem;
-         max-height: 25rem;
-     }
-
-     .realtor-one img {
-        margin-top: -6rem;
+    .realtor-one,
+    .realtor-two,
+    .realtor-three {
+        max-width: 25rem;
+        max-height: 25rem;
     }
- 
 
-    .realtor__presentation{
-        font-size: 2rem;
-        
-        width: 100%;
-    }
- 
-     .realtor__presentation span.realtor-name {
-         font-size: 2.5rem; 
-         
-     }
-     
-     .realtor__presentation span.realtor-name__question {
-         font-size: 2rem;
-         
-     }
-
-     .realtor__presentation-entity {
+    .realtor__presentation-entity {
         font-size: 3rem;
-        
     }  
     
-
-     .button-contactMe {
-        letter-spacing: .5rem;
-        padding: .5rem 2.5rem;
+    .button-contactMe {
         font-size: 2rem;
-        margin-top: 3rem;
-        margin-bottom: 6.5rem;
     }
 
     .button-contactMe span {
-        padding-left: 2rem;
         font-size: 3rem ;
     }
 
@@ -1138,20 +1242,35 @@ footer {
         font-size: 3rem ;
     }
 
+
     /*  ************  CONTACT  ***********  */
 
+    .contact-wrapper {
+        flex-wrap: wrap;
+    }
 
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-logo {
+        grid-template-rows: repeat(6,15rem);
+    }
 
 
     /*  ************  FOOTER  ***********  */  
 
-
+    .footer-media {
+        grid-template-rows: repeat(2, 1rem);
+    }
 
   }  
+
 
   @media only screen and (max-width: 1520px) {
 
     /*  ************  HEADER  ***********  */
+
     .header-slogan h1 {
         font-size: 6rem;
     }    
@@ -1175,6 +1294,7 @@ footer {
   @media only screen and (max-width: 1410px) {
 
     /*  ************  HEADER  ***********  */
+
     .header-slogan h1 {
         font-size: 5rem;
     }    
@@ -1186,21 +1306,63 @@ footer {
 
     .team-lead__presentation span.team-lead__name,
     .team-lead__presentation span.team-lead__dream {
+        font-size: 2.5rem;
+    }
+
+    /* ************  REALTORS  ***********  */
+    
+    .realtors {
+        flex-wrap: wrap;
+    }
+
+    .realtors > * {
+        width: 40%;
+    }
+
+    .realtors-presentation p{
+        font-size: 2.3rem;
+    }
+
+    .realtor__presentation-entity {
         font-size: 3rem;
+    }  
+    
+
+    .button-contactMe {
+        font-size: 2rem;
+        letter-spacing: .2rem;
+    }
+
+    /*  ************  FOOTER  ***********  */  
+
+    .footer-nav {
+        justify-content: space-evenly;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-info > * {
+        margin: 2rem 0;
+    }
+
+    .footer-info__address {
+        padding-right: 0;
+    }
+    
+    .footer-info__email {
+        padding-left: 0;
+    }
+
+    .footer-media {
+        align-self: center;
     }
 
   }
   
 
-  @media only screen and (max-width: 1410px) {
-
-    /*  ************  HEADER  ***********  */
-    .team-lead__presentation span.team-lead__name,
-    .team-lead__presentation span.team-lead__dream {
-        font-size: 2.5rem;
-    }
-
-  }
 
   @media only screen and (max-width: 1220px) {
 
@@ -1286,10 +1448,69 @@ footer {
     }
 
 
+    /*  ************  CONTACT  ***********  */
+
+    .contact-wrapper {
+        margin-top: 10rem;
+    }
+
+    .contact-form form > * {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .contact-input {
+        width: 100%;
+    }
+
+    .contact-label {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .contact-logo {
+        grid-template-rows: repeat(6,12rem);
+    }
+    
+  }  
+
+
+  @media only screen and (max-width: 800px) {
+
     /*  ************  REALTORS  ***********  */ 
 
+    .button-contactMe {
+        font-size: 1.6rem;
+        letter-spacing: .2rem;
+    
+    }
 
-  }  
+    /*  ************  CONTACT  ***********  */
+
+    .contact-logo {
+        grid-template-rows: repeat(6,8rem);
+    }
+
+    /*  ************  FOOTER  ***********  */  
+
+    .footer-nav {
+        flex-wrap: wrap;
+    }
+  }
+
+
+  @media only screen and (max-width: 650px) {
+
+    /*  ************  REALTORS  ***********  */ 
+
+    .button-contactMe {
+        font-size: 1.5rem;
+        letter-spacing: .1rem;
+    }
+    
+  }
+
 
 
   @media only screen and (max-width: 600px) {
@@ -1348,10 +1569,45 @@ footer {
     .header-slogan .button-contactUs span {
         font-size: 2.5rem ;
     }
+
+
+    /*  ************  CONTACT  ***********  */
+    .contact-label {
+        font-size: 1.5rem;
+    }
+    
+  }
+
+
+  @media only screen and (max-width: 550px) {
+
+    /*  ************  REALTORS  ***********  */ 
+
+    .realtor-one img {
+        margin-top: -3rem;
+    }
+
+
+    .button-contactMe span {
+        display: none;
+    }
+
+    /*  ************  CONTACT  ***********  */
+
+    .contact-logo {
+        grid-template-rows: repeat(6,5rem);
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
   }
 
 
 @media only screen and (max-width: 420px) {
+
+    /*  ************  HEADER  ***********  */
+
     .team-lead p  {
         display: none;
     }
@@ -1359,6 +1615,38 @@ footer {
     .header-slogan {
         margin-top: 0;
     }
+
+    /*  ************  REALTORS  ***********  */ 
+
+    .realtors-presentation {
+        display: none;
+    }
+
+    /*  ************  CONTACT  ***********  */
+
+    .contact-submit div {
+        font-size: 1.5rem;
+        padding: 0.5rem 2rem;
+    }
+
+    .contact-submit div span {
+        font-size: 2rem;
+    }
+
+    .contact-label {
+        font-size: 1.1rem;
+    }
+
+    /*  ************  FOOTER  ***********  */  
+
+    .footer-info {
+        font-size: 1.2rem;
+    }
+
+    .footer-copyright {
+        font-size: 1rem;
+    }
+
 }
 
 
