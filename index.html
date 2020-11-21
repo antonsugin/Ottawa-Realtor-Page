@@ -12,6 +12,8 @@
     <link rel="icon" href="images/Logo/logo_transparent.png" sizes="16x16" type="image/png">
 </head>
 <body>
+
+    
     <div class="container">
         <header>
             
@@ -22,10 +24,11 @@
                
 
                 <nav class="navigation">
-                    <a href="#" class="nav-a">About Us</a>
-                    <a href="#topRealtors" class="nav-a">Top 3 Realtors</a>
-                    <a href="#topHouses" class="nav-a">Top 3 Houses</a>
-                    <a href="#socialMedia" class="nav-a">Social Media</a>
+
+                          <a href="#" class="nav-a">About Us</a>
+                          <a href="#topRealtors" class="nav-a">Top 3 Realtors</a>
+                          <a href="#topHouses" class="nav-a">Top 3 Houses</a>
+                          <a href="#socialMedia" class="nav-a">Social Media</a>
                 </nav>
 
                 <div class="team-lead">
@@ -109,7 +112,9 @@
         
         <section id="topHouses" class="houses">
 
-            <div class="family-house">
+            <div class="single-family-house"> 
+
+                <h3>Single Family House</h3>
 
                 <div class="house-1">
                     <div class="front-view">
@@ -162,6 +167,8 @@
 
             <div class="bungalow-house">
 
+                <h3>Bungalow House</h3>
+
                 <div class="house-2">
                     <div class="front-view">
                         <img src="images/Houses/House 2/House Front/Original 4512.jpg" alt="">
@@ -211,7 +218,9 @@
 
             </div>
 
-            <div class="single-family-house">
+            <div class="family-house">
+
+                <h3>Family House</h3>
 
                 <div class="house-3">
                     <div class="front-view">
@@ -279,7 +288,7 @@
                             </div>
 
                             <div class="contact-input">
-                                <input type="text" placeholder="Name" id="name" name="name">
+                                <input type="text" placeholder="Name" id="name"  name="name" onclick="changeInputColor (id)">
                             </div>
 
                         </div>
@@ -291,7 +300,7 @@
                             </div>
 
                             <div class="contact-input">
-                                <input type="email" placeholder="Email" id="email" name="email">
+                                <input type="email" placeholder="Email" id="email" name="email" onchange="changeInputColor ()">
                             </div>
 
                         </div>
@@ -303,7 +312,7 @@
                             </div>
 
                             <div class="contact-input">
-                                <input type="text" placeholder="Phone Number" id="phone-number" name="phone-number">
+                                <input type="text" placeholder="Phone Number" id="phone-number" name="phone-number" onchange="changeInputColor ()">
                             </div>
 
                         </div>
@@ -316,7 +325,8 @@
 
                             <div class="contact-input">
                                 <select name="property" id="property">
-                                    <option value="other">Other</option>
+                                    <option
+                                    value="other">Other</option>
                                     <option value="family-house">Family House</option>
                                     <option value="bungalow-house">Bungalow House</option>
                                     <option value="single-family-house">Single Family House</option>
@@ -385,7 +395,11 @@
         </footer>
     </div>    
 
-    
+        <button onclick="topFunction()" id="toTop" title="Go to top">&#8657; TOP</button>
+
+        
+        
+
 </body>
 
     <script src="index.js"></script>

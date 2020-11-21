@@ -6,6 +6,11 @@
     box-sizing: inherit;
 }
 
+
+
+
+
+
 html {
     scroll-behavior:  smooth;
     box-sizing: border-box;
@@ -16,10 +21,6 @@ body {
     font-weight: 300;
     line-height: 1.6;
     font-family: 'Montserrat', sans-serif;
-    
-}
-
-.container {
     
 }
 
@@ -66,20 +67,12 @@ header {
     height: auto;
 }
 
-/* @media only screen and (max-width: 650px) {
-    .logo {
-        width: 20rem;
-        height: 20rem;
-    }
-}  */
-
 .navigation {
     display: flex;
     justify-content: space-between;
     width: 57%;
     height: fit-content;
     font-size: 2rem;
-    
 }
 
 .nav-a {
@@ -364,8 +357,6 @@ header {
 .house-1 > *,
 .house-2 > *,
 .house-3 > * {
-    /* color: black; */
-    /* color: red; */
     text-align: center;
     overflow: hidden;
 }
@@ -373,10 +364,22 @@ header {
 .house-1,
 .house-2,
 .house-3 {
+    margin-top: 2rem;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(10, 6rem);
+}
+
+h3 {
+    font-size: 5rem;
+    margin: 0 auto;
+    padding: 1rem 0;
+    border-top: .2rem solid #f6abb6;
+    border-bottom: .2rem solid #f6abb6;
+    width: fit-content;
+    font-family: 'Sansita Swashed', cursive;
+    color: #fe8a71;
 }
 
 .front-view {
@@ -447,8 +450,6 @@ header {
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(4, 4rem);
     gap: 5rem;
-    /* color: black; */
-    /* color: red; */
     color: #4F545F;
     font-weight: 600;
     padding: 3rem;
@@ -592,7 +593,7 @@ header {
     margin-top: 5rem;
     transition: color 300ms linear;   
     align-self: center;
-    /* margin-bottom: 5rem; */
+    margin-bottom: 5rem;
 }
 
 .button-contactRealtor:hover {
@@ -615,23 +616,16 @@ header {
 
 /*  ************  CONTACT  ***********  */  
 
-.contact {
-    /* font-family: 'Sansita Swashed', cursive; */
-    /* color: #4F545F; */
-    /* letter-spacing: .5rem; */
-}
-
+ 
 h2 {
     letter-spacing: .5rem;
     font-size: 6rem;
     margin: 0 auto;
     color: #4F545F;
-    /* text-align: center; */
     margin-top: 5rem;
     font-weight: 500;
     border-bottom: 1px solid #4F545F;;
     width: fit-content;
-    /* display: inline-block; */
     font-family: 'Sansita Swashed', cursive;
     
 }
@@ -639,13 +633,10 @@ h2 {
 .contact-wrapper {
     display: flex;
     justify-content: space-evenly;
-    /* flex-wrap: wrap; */
-    /* height: 40%; */
 }
 
 .contact-wrapper > * {
     display: grid;
-    /* grid-gap: 1rem; */
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(6, 15rem);
     align-items: center;
@@ -654,10 +645,8 @@ h2 {
 
 .contact-form form > * {
     font-family: 'Sansita Swashed', cursive;
-    /* width: 49%; */
     margin: 2rem 0;
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: space-between;
     align-items: center;
     color: #4F545F;
@@ -670,16 +659,41 @@ h2 {
 
 .contact-input {
     width: 55%;
-    /* padding: 1rem; */
 }
 
 .contact-label {
     width: 45%;
-
 }
 
 
 
+
+
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+  border: 1px solid chartreuse;
+  -webkit-text-fill-color: blue;
+  /* box-shadow: 0 0 0px 100rem chartreuse inset; */
+  /* box-shadow: 0 0 0px 100rem chartreuse inset; */
+  background: linear-gradient(to top, #11998e, #38ef7d);
+  /* background-size: 100%; */
+  /* background-repeat: no-repeat; */
+  /* background-color: black; */
+  /* transition: background-color .5ms ease-in-out 0s; */
+}
+  
+
+.contact-name :first-child ::after,
+.contact-email :first-child ::after {
+    content: "\2734";
+    color: red;
+    font-size: 1rem;
+    display: inline-block;
+    transform: translateY(-1rem);
+}
 
 
 input[type=text],
@@ -699,15 +713,35 @@ textarea
     /* resize: vertical; */
 }
 
-input[type=text]:focus {
+select {
+    font-family: 'Sansita Swashed', cursive;
+    font-weight: 600;
+}
+
+option:first-child {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+
+/* :not(:first-child) */
+
+/* select option:first-child,
+select::placeholder {
+    font-family: 'Montserrat', sans-serif;
+} */
+
+
+input[type=text]:focus,
+input[type=email]:focus {
     /* border: none; */
-    box-shadow: 0px 9px 61px 2px rgba(0,255,38,.4);
+    /* box-shadow: 0px 9px 61px 2px rgba(0,255,38,.4); */
+    /* box-shadow: 0px 9px 61px 2px rgb(20, 180, 255); */
+    /* border: 1px solid rgb(20, 180, 255);
+    background-color: rgba(20, 180, 255, 0.3); */
     /* background-color: hotpink; */
 }
 
-input[type=text]:active {
-    /* background-color: indigo; */
-}
 
 input[type=text]:required {
     content: "required";
@@ -749,13 +783,13 @@ textarea {
 }
 
 .contact-submit div:hover {
-    font-size: 3.1rem;
+    /* font-size: 3.1rem; */
     -webkit-transition: all .2s ease-in-out;
     -ms-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    -webkit-box-shadow: 0px 9px 61px 2px rgba(0,255,38,.4);
-    -moz-box-shadow: 0px 9px 61px 2px rgba(0,255,38,.4);
-    box-shadow: 0px 9px 61px 2px rgba(0,255,38,.4);
+    -webkit-box-shadow: 0px 9px 61px 2px rgba(0,255,38,.7);
+    -moz-box-shadow: 0px 9px 61px 2px rgba(0,255,38,.7);
+    box-shadow: 0px 9px 61px 2px rgba(0,255,38,.7);
 }
 
 
@@ -919,6 +953,41 @@ footer {
 }
 
 
+/* **********To top********** */
+
+#toTop {
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 3rem;
+    z-index: 99;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 3rem;
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    font-weight: 600;
+    color: #fceed1;
+    background-color: #B89068;
+  }
+  
+  #toTop:hover {
+      border: .4rem solid white;
+    -webkit-box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
+    -moz-box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
+    box-shadow: 0px 9px 61px 2px rgba(184,144,104,1);
+    background: linear-gradient(to top, #11998e, #38ef7d);
+  }
+
+
+  /* **********HUMBURGER********** */
+  
+
+
+
 
 @media only screen and (max-width: 2200px) {
 
@@ -1033,19 +1102,103 @@ footer {
 
     /*  ************  HEADER  ***********  */
 
-    .team-lead__presentation-entity,
+    /* .team-lead__presentation-entity,
     .realtor__presentation-entity {
-        font-size: 7rem;
+        font-size: 5rem;
     }  
 
-    .team-lead p{
-        font-size: 2rem;
+    .team-lead p > *{
+        font-size: 4rem;
         
     }
 
     .team-lead__presentation span.team-lead__name,
     .team-lead__presentation span.team-lead__dream {
+        font-size: 2.5rem;
+    } */
+
+    .team-lead__presentation {
+        /* width: 35%; */
+    }
+
+    .navigation {
         font-size: 3.5rem;
+        font-weight: 600;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .header-wrapper{
+        display: block;
+    }
+
+    .team-lead {
+        /* margin-top: 10rem; */
+        width: 100%;
+        height: fit-content;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+
+    .team-lead__wrapper{
+        max-width: 25rem;
+        max-height: 25rem;
+        align-self: center;
+    }
+
+    .team-lead__wrapper img{
+        max-height: 25rem;
+    }
+        
+    .team-lead__presentation{
+        font-size: 1.5rem;
+        margin-top: 0rem;
+        width: 30%;
+    }
+
+    /* .team-lead__presentation span.realtor-name__question {
+        font-size: 1.6rem;
+    }
+    .team-lead__presentation span.realtor-name {
+        font-size: 1.8rem;
+    } */
+
+    .team-lead__presentation-entity {
+        font-size: 3rem;
+        margin-left: 1rem;
+    }  
+
+    .team-lead__presentation span.team-lead__name,
+    .team-lead__presentation span.team-lead__dream {
+        font-size: 3.5rem;
+    }
+
+    .header-slogan {
+        top: calc(100vh - 40vh);
+        left: calc(100vw - 50vw);
+        width: 100%;
+        text-align: center;
+    }
+    
+    .header-slogan h1 {
+        font-size: 4.5rem;
+        line-height: 1;
+    }
+    
+    .button-contactUs {
+        letter-spacing: .5rem;
+        padding: .5rem 2.5rem;
+        font-size: 2rem;
+    }
+
+    .header-slogan .button-contactUs span {
+        padding-left: 2rem;
+        font-size: 3rem ;
     }
 
 
@@ -1071,6 +1224,10 @@ footer {
         font-size: 1.4rem;
     }
 
+    .house-description__date-current {
+        font-size: 1.4rem;
+    }
+
 }
 
 
@@ -1087,13 +1244,13 @@ footer {
     }
 
     .team-lead__wrapper{
-        max-width: 40rem;
-        max-height: 40rem;
+        max-width: 30rem;
+        max-height: 30rem;
         
     }
     .team-lead__wrapper img{
-        max-width: 40rem;
-        max-height: 40rem;
+        max-width: 30rem;
+        max-height: 30rem;
     }
 
 
@@ -1109,7 +1266,7 @@ footer {
 
     .contact-logo {
         grid-template-rows: repeat(6,10rem);
-        align-self: center;
+        /* align-self: center; */
     }
 
     .contact-submit div {
@@ -1146,8 +1303,8 @@ footer {
     }
 
     .header-slogan {
-        top: 65%;
-        left: 45%;
+        top: 85%;
+        left: 50%;
     }
     
     .header-slogan h1 {
@@ -1210,6 +1367,10 @@ footer {
         grid-gap: 1rem;
         grid-template-columns: repeat(11, 1fr);
         grid-template-rows: repeat(10, 3rem);
+    }
+
+    h3 {
+        font-size: 3rem;
     }
 
     .house-description {
@@ -1369,8 +1530,8 @@ footer {
     /*  ************  HEADER  ***********  */
 
     .navigation {
-        font-size: 1.5rem;
-        font-weight: 600;
+        font-size: 1.2rem;
+        /* font-weight: 600; */
         width: 100%;
     }
 
@@ -1383,7 +1544,7 @@ footer {
     }
 
     .team-lead {
-        margin-top: 10rem;
+        /* margin-top: 10rem; */
         width: 100%;
         height: fit-content;
         flex-direction: row;
@@ -1404,7 +1565,7 @@ footer {
     .team-lead__presentation{
         font-size: 1.5rem;
         margin-top: 0rem;
-        width: 50%;
+        /* width: 50%; */
     }
 
     .team-lead__presentation span.realtor-name__question {
@@ -1414,10 +1575,17 @@ footer {
         font-size: 1.8rem;
     }
 
-    .team-lead__presentation-entity {
+    .team-lead p {
+        font-size: 2rem;
+    }
+
+    .team-lead p > * {
         font-size: 3rem;
+    }
+    /* .team-lead__presentation-entity {
+        font-size: 1.6rem;
         margin-left: 1rem;
-    }  
+    }   */
 
     .team-lead__presentation span.team-lead__name,
     .team-lead__presentation span.team-lead__dream {
@@ -1425,7 +1593,7 @@ footer {
     }
 
     .header-slogan {
-        top: calc(100vh - 30vh);
+        top: calc(100vh - 20vh);
         left: calc(100vw - 50vw);
         width: 100%;
         text-align: center;
@@ -1451,7 +1619,7 @@ footer {
     /*  ************  CONTACT  ***********  */
 
     .contact-wrapper {
-        margin-top: 10rem;
+        /* margin-top: 10rem; */
     }
 
     .contact-form form > * {
@@ -1477,6 +1645,24 @@ footer {
 
 
   @media only screen and (max-width: 800px) {
+
+    /*  ************  HEADER  ***********  */
+
+    .team-lead__wrapper{
+        max-width: 20rem;
+        max-height: 20rem;
+    }
+
+    .team-lead__wrapper img{
+        max-height: 20rem;
+    }
+
+    .team-lead p {
+        font-size: 1.5rem;
+        line-height: 3rem;
+        width: 50%;
+    }  
+    
 
     /*  ************  REALTORS  ***********  */ 
 
@@ -1525,6 +1711,15 @@ footer {
     }
 
     .navigation{
+        display: none;
+    }
+
+    .header-slogan {
+        top: calc(100vh - 40vh);
+        left: calc(100vw - 50vw);
+    }
+
+    .team-lead__presentation {
         display: none;
     }
 
@@ -1648,6 +1843,7 @@ footer {
     }
 
 }
+
 
 
 
