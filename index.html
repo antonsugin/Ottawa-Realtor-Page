@@ -300,7 +300,7 @@
                             </div>
 
                             <div class="contact-input">
-                                <input type="email" placeholder="Email" id="email" name="email" onchange="changeInputColor ()">
+                                <input type="email" placeholder="Email" id="email" name="email" required onclick="changeInputColor (id, type)">
                             </div>
 
                         </div>
@@ -312,7 +312,7 @@
                             </div>
 
                             <div class="contact-input">
-                                <input type="text" placeholder="Phone Number" id="phone-number" name="phone-number" onchange="changeInputColor ()">
+                                <input type="text" placeholder="Phone Number" id="phone-number" name="phone-number"  onclick="changeInputColor (id)">
                             </div>
 
                         </div>
@@ -324,7 +324,7 @@
                             </div>
 
                             <div class="contact-input">
-                                <select name="property" id="property">
+                                <select name="property" id="property" onclick="changeInputColor (id)">
                                     <option
                                     value="other">Other</option>
                                     <option value="family-house">Family House</option>

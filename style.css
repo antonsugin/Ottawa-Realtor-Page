@@ -674,15 +674,9 @@ h2 {
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus {
-  border: 1px solid chartreuse;
-  -webkit-text-fill-color: blue;
-  /* box-shadow: 0 0 0px 100rem chartreuse inset; */
-  /* box-shadow: 0 0 0px 100rem chartreuse inset; */
-  background: linear-gradient(to top, #11998e, #38ef7d);
-  /* background-size: 100%; */
-  /* background-repeat: no-repeat; */
-  /* background-color: black; */
-  /* transition: background-color .5ms ease-in-out 0s; */
+  border: 1px solid limegreen;
+  -webkit-text-fill-color: whitesmoke;
+  box-shadow: 0 0 0px 100rem limegreen inset;
 }
   
 
@@ -701,17 +695,25 @@ input[type=email],
 select, 
 textarea
  {
-    letter-spacing: .2rem;
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     color: #4F545F;
-    /* background-color: indigo; */
     outline: none;
-    
-    /* resize: vertical; */
 }
+
+input[type=text],
+input[type=email],
+select{
+    letter-spacing: .4rem;
+}
+
+textarea {
+    letter-spacing: .2rem;
+}
+
+
 
 select {
     font-family: 'Sansita Swashed', cursive;
@@ -723,6 +725,10 @@ option:first-child {
     font-weight: 600;
 }
 
+.required {
+    border: 1px solid red !important;
+
+}
 
 /* :not(:first-child) */
 
