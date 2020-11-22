@@ -90,3 +90,10 @@ function changeInputColor (id, type) {
         }
     }; 
 } 
+
+// Menu nav bar visibility
+var humToggle = document.querySelector('.menu');
+
+humToggle.addEventListener('click', () => {
+  document.body.classList.toggle('nav-open');
+});

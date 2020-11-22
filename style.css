@@ -23,6 +23,107 @@ a {
     text-decoration: none;
 }
 
+/* ********* HUMB ******** */
+
+.ham {
+    /* background-color: black; */
+    /* margin-left: -50px; */
+    position: absolute;
+    height: 50vh;
+    z-index: 100000;
+    width: 50vw;
+
+    /* transform: translateX(-3rem);
+    -webkit-transform: translateX(-3rem); */
+}
+
+#menu {
+    /* visibility: hidden; */
+    display: none;
+}
+
+.menu,
+.menu::before,
+.menu::after {
+    position: absolute;
+    width: 75px;
+    height: 10px;
+    border-radius: 5px;
+    background: white;
+    transition: .6s;
+    -webkit-transition: .6s;
+}
+
+
+
+.menu {
+    z-index: 100000;
+    cursor: pointer;
+    top: 10%;
+    left: 5%;
+    /* display: none; */
+}
+
+.menu::before {
+    content: '';
+    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+}
+
+.menu::after {
+    content: '';
+    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+}
+
+#menu:checked + .menu {
+    width: 0px;
+}
+
+#menu:checked + .menu::before {
+    transform: rotate(45deg) translate(0px);
+    -webkit-transform: rotate(45deg) translate(0px);
+}
+
+#menu:checked + .menu::after {
+    transform: rotate(-45deg) translate(0px);
+    -webkit-transform: rotate(-45deg) translate(0px);
+}
+
+
+.nav-ham {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transition: .6s;
+    -webkit-transition: .6s;
+    
+}
+
+.nav-ham > * {
+    width: fit-content;
+    font-size: 1.5rem;
+}
+
+.cla-1 {
+    margin-top: 5rem;
+}
+
+
+
+.nav-open .nav-ham {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transition: .6s;
+    -webkit-transition: .6s;
+}
 
 
 
@@ -322,6 +423,7 @@ header {
 .house-2 > * img:hover,
 .house-3 > * img:hover {
     transform: scale(1.3);
+    -webkit-transform: scale(1.3);
     transition: all .7s ease;
     transform-origin: 50% 50%;
 }
@@ -477,7 +579,7 @@ h3 {
     grid-row-start: 1;
     grid-row-end: 2;
     transform: translateX(3rem);
-    
+    -webkit-transform: translateX(3rem);
 }
 
 
@@ -488,6 +590,7 @@ h3 {
     grid-row-end: 2;
     text-align: center;
     transform: translateX(2rem);
+    -webkit-transform: translateX(2rem);
 }
 
 .house-description__price-icon {
@@ -994,7 +1097,19 @@ footer {
 
     .header-slogan h1 {
         font-size: 7.5rem;
-    }    
+    }
+    
+    /*  ************  HOUSES  ***********  */
+
+    .house-description__date-current {
+        font-size: 1.9rem;
+    }
+
+    /*  ************  CONTACT  ***********  */
+
+    .contact-label {
+        font-size: 1.8rem;
+    }
 
     /*  ************  FOOTER  ***********  */  
 
@@ -1006,12 +1121,6 @@ footer {
         font-size: 1.7rem;
     }
 
-    /*  ************  CONTACT  ***********  */
-
-    .contact-label {
-        font-size: 1.8rem;
-    }
-
 }
 
 
@@ -1020,7 +1129,7 @@ footer {
     /*  ************  HEADER  ***********  */
 
     .navigation {
-        font-size: 3.5rem;
+        /* font-size: 3.5rem; */
         font-weight: 600;
         width: 100%;
         justify-content: space-around;
@@ -1102,6 +1211,10 @@ footer {
 
     /*  ************  HOUSES  ***********  */
 
+    .house-description__date-current {
+        font-size: 2rem;
+    }
+
     .open-house {
         font-size: 2.2rem;
     }
@@ -1119,10 +1232,6 @@ footer {
     }
 
     .footer-copyright {
-        font-size: 1.4rem;
-    }
-
-    .house-description__date-current {
         font-size: 1.4rem;
     }
 
@@ -1278,6 +1387,10 @@ footer {
         grid-template-columns: repeat(11, 1fr);
         grid-template-rows: repeat(4, 2rem);
         gap: 3rem;
+    }
+
+    .house-description__date-current {
+        font-size: 1.4rem;
     }
 
     .open-house {
@@ -1589,13 +1702,6 @@ footer {
   @media only screen and (max-width: 600px) {
 
     /*  ************  HEADER  ***********  */
-
-    .logo {
-        display: block;
-        width: 15rem;
-        height: 15rem;
-        margin-left: 3rem;
-    }
 
     .navigation{
         display: none;
