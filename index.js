@@ -54,7 +54,7 @@ function topFunction() {
 }
 
 
-// Change input colors when filled up
+// Changed input colors 
 function changeInputColor (id, type) {
         
     var curInput = document.getElementById(id);
@@ -90,17 +90,3 @@ function changeInputColor (id, type) {
         }
     }; 
 } 
-
-
-// function isValid (curInp) {
-//     if (type === 'email') {
-//         e.target.style.backgroundColor  = "blue";
-//         e.target.style.color = "whitesmoke"
-        
-//     }
-//     else {
-//         e.target.style.border = "1px solid red"
-//         e.target.style.background  = "white";
-//         e.target.style.color  = "#4F545F";
-//     }
-// } 
