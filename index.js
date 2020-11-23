@@ -1,16 +1,23 @@
 
+window.onload = function () {
+    chooseLocation();
+    choosePrice ();
+    setDate();
+    setOpenHouseDate ();
+}
+
+
+
 var now = new Date();
 var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ];
 
 function listedDate (curDate) {
-
     var month = months[curDate.getMonth()];
     return curDate.getDate() + ' ' +  month + ' ' + curDate.getFullYear()
 }
 
 // Set current date
 function setDate () {
-
     var date = document.getElementsByClassName('house-description__date-current');
     for ( var i = 0; i < date.length; i++) {
         date[i].innerHTML = listedDate(now);
@@ -19,7 +26,6 @@ function setDate () {
 
 
 function setOpenHouseDate () {
-
     var openHouseDate = document.getElementsByClassName('open-house');
     var openHouseStr = 'Open House on: ' + listedDate(now) + ' 3PM';
     for ( var i = 0; i < openHouseDate.length; i++) {
@@ -27,10 +33,35 @@ function setOpenHouseDate () {
     }
 }
 
-setDate();
-setOpenHouseDate ();
+// Return current House Data
+function setHouseData (arr) {
+    var ind = Math.floor(Math.random(0, 10) * arr.length);
+    return arr[ind]
+}
 
 
+// Set House Location
+function chooseLocation () {
+    var locations = ['Kanata', 'Stittsville', 'Westboro', 'Orléans', 'Barrhaven'];
+
+    var location = document.getElementsByClassName('house-description__area-location');
+    for ( var i = 0; i < location.length; i++) {
+        location[i].innerHTML = setHouseData(locations);
+    }
+}
+
+
+
+// Set House Price
+function choosePrice () {
+        var prices = ['1,200,000', '5,000,000', '600,000', '900,000', '2,000,000'];
+
+        var price = document.getElementsByClassName('house-description__price-amount');
+        for ( var i = 0; i < price.length; i++) {
+            price[i].innerHTML = setHouseData(prices);
+    }
+
+}
 
 var mybutton = document.getElementById("toTop");
 
@@ -97,3 +128,6 @@ var humToggle = document.querySelector('.menu');
 humToggle.addEventListener('click', () => {
   document.body.classList.toggle('nav-open');
 });
+
+
+
