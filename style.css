@@ -102,7 +102,6 @@ a {
     -moz-transform: rotate(-45deg) translate(0px);
 }
 
-
 .nav-humburger {
     display: flex;
     flex-direction: column;
@@ -151,6 +150,9 @@ a {
 /*  ************  HEADER  ***********  */
 
 header {
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
     /* height: 100vh; */
     height: 100%;
     position: relative;
@@ -207,9 +209,7 @@ header {
     text-align: center;
 }
 
-.nav-a:hover
-/* .nav-a:focus */
- {
+.nav-a:hover {
     color: #4F545F;
     background-color: #F7DDA4;
     border: 2px solid goldenrod;
@@ -400,8 +400,7 @@ header {
     transition: color 300ms linear;    
 }
 
-.button-contactMe:hover,
-.button-contactMe:focus {
+.button-contactMe:hover {
     color: #4F545F;
     background-color: #F7DDA4;
     -webkit-transition: color 300ms linear;
@@ -447,14 +446,12 @@ header {
     flex: 0 0 30%;
     display: flex;
     flex-direction: column;
+    padding: 0 2rem;
 }
 
 .house-1 > * img:hover,
 .house-2 > * img:hover,
-.house-3 > * img:hover,
-.house-1 > * img:focus,
-.house-2 > * img:focus,
-.house-3 > * img:focus {
+.house-3 > * img:hover {
     transform: scale(1.3);
     -webkit-transform: scale(1.3);
     transition: all .7s ease;
@@ -666,8 +663,7 @@ h3 {
     color: #2F4F4F;
 }
 
-.house-description:hover > .open-house,
-.house-description:focus > .open-house {
+.house-description:hover > .open-house {
     color: #fceed1;
     background: rgba(203,96,179,.8);
     -webkit-box-shadow: -2px 5px 40px 6px rgba(0,0,0,0.42);
@@ -693,11 +689,7 @@ h3 {
 .house-description:hover > .house-description__bedrooms-icon,
 .house-description:hover > .house-description__price-icon,
 .house-description:hover > .house-description__area-icon,
-.house-description:hover > .house-description__date-icon,
-.house-description:focus > .house-description__bedrooms-icon,
-.house-description:focus > .house-description__price-icon,
-.house-description:focus > .house-description__area-icon,
-.house-description:focus > .house-description__date-icon {
+.house-description:hover > .house-description__date-icon {
    
     filter: 
     invert(0.5)
@@ -722,8 +714,7 @@ h3 {
     margin-bottom: 5rem;
 }
 
-.button-contactRealtor:hover,
-.button-contactRealtor:focus {
+.button-contactRealtor:hover {
     color: #4F545F;
     background-color: #F7DDA4;
     -webkit-transition: color 300ms linear;
@@ -957,12 +948,7 @@ footer {
 .footer-media__instagram img:hover,
 .footer-media__twitter img:hover,
 .footer-media__youtube img:hover,
-.footer-media__linkedin img:hover,
-.footer-media__facebook img:focus,
-.footer-media__instagram img:focus,
-.footer-media__twitter img:focus,
-.footer-media__youtube img:focus,
-.footer-media__linkedin img:focus {
+.footer-media__linkedin img:hover {
     transform: scale(1.5);
     -webkit-transform: scale(1.5);
 }
@@ -1783,23 +1769,30 @@ footer {
 
     .humburger{
         z-index: 1;
-        height: 100%;    
+        /* height: 100%;     */
     }
 
     .nav-humburger {
         height: 100%;
     }
 
+    .nav-open header {
+        height: 100vh;
+        transition: .2s;
+        -webkit-transition: .2s;
+        -moz-transition: .2s;
+    }
 
+    
     /*  ************  HEADER  ***********  */
 
     .team-lead__wrapper{
-        max-width: 30rem;
-        max-height: 30rem;
+        max-width: 27rem;
+        max-height: 27rem;
     }
 
     .team-lead__wrapper img{
-        max-height: 30rem;
+        max-height: 27rem;
     }
 
     .team-lead p {
@@ -1808,8 +1801,18 @@ footer {
         width: 50%;
     }  
 
+    .team-lead p > * {
+        font-size: 3rem;
+    }
+
+    .team-lead__presentation span.team-lead__name,
+    .team-lead__presentation span.team-lead__dream {
+        font-size: 2.2rem;
+    }
+
     .header-wrapper {
         padding-top: 5rem;
+        padding-right: 0;
     }
     
 
