@@ -28,7 +28,8 @@ a {
 .humburger {
     position: absolute;
     height: 100vh;
-    z-index: 1000;
+    /* z-index: 1000; */
+    z-index: -1;
     width: 100vw;
 }
 
@@ -58,7 +59,7 @@ a {
 }
 
 .menu {
-    z-index: 1000;
+    /* z-index: 1000; */
     cursor: pointer;
     top: 7%;
     left: 7%;
@@ -179,6 +180,10 @@ header {
     height: auto;
 }
 
+.header-wrapper {
+    z-index: 10000000;
+}
+
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -260,6 +265,7 @@ header {
 }
 
 .header-slogan {
+    /* z-index: 1000; */
     position: absolute;
     top: 63%;
     left: 42%;
