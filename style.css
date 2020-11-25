@@ -23,14 +23,21 @@ a {
     text-decoration: none;
 }
 
+.container {
+    /* width: 100vw; */
+}
+
 /* ********* HUMBURGER ******** */
 
 .humburger {
     position: absolute;
     height: 100vh;
-    /* z-index: 1000; */
     z-index: -1;
     width: 100vw;
+    margin-left: -100vw;
+    transition: .7s;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
 }
 
 #menu {
@@ -44,9 +51,9 @@ a {
     width: 5.5rem;
     height: .5rem;
     border-radius: .5rem;
-    transition: .6s;
-    -webkit-transition: .6s;
-    -moz-transition: .6s;
+    transition: .7s;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
 }
 
 .menu {
@@ -59,7 +66,6 @@ a {
 }
 
 .menu {
-    /* z-index: 1000; */
     cursor: pointer;
     top: 7%;
     left: 7%;
@@ -108,9 +114,9 @@ a {
     transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
-    transition: .6s;
-    -webkit-transition: .6s;
-    -moz-transition: .6s;
+    transition: .7s;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
 }
 
 .nav-humburger a {
@@ -133,12 +139,14 @@ a {
     transform: translateX(0);
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
-    transition: .6s;
+    /* transition: .6s;
     -webkit-transition: .6s;
-    -moz-transition: .6s;
+    -moz-transition: .6s; */
 }
 
-
+.nav-open .humburger {
+    margin-left: 0;
+}
 
 /*  ************  HEADER  ***********  */
 
@@ -180,10 +188,6 @@ header {
     height: auto;
 }
 
-.header-wrapper {
-    z-index: 10000000;
-}
-
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -201,7 +205,6 @@ header {
     letter-spacing: .5rem;
     padding: 1rem 2rem;
     text-align: center;
-    z-index: 2000;
 }
 
 .nav-a:hover
@@ -265,7 +268,6 @@ header {
 }
 
 .header-slogan {
-    /* z-index: 1000; */
     position: absolute;
     top: 63%;
     left: 42%;
@@ -1035,7 +1037,6 @@ footer {
     position: fixed;
     bottom: 2rem;
     right: 1rem;
-    z-index: 99;
     font-size: 2rem;
     border: none;
     outline: none;
@@ -1777,10 +1778,14 @@ footer {
     /* ********* HUMBURGER ******** */
     .menu {
         display: block;
-        /* display: none; */
+        z-index: 2;
     }
 
-    .humburger,
+    .humburger{
+        z-index: 1;
+        height: 100%;    
+    }
+
     .nav-humburger {
         height: 100%;
     }
