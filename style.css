@@ -199,8 +199,9 @@ header {
     z-index: 2000;
 }
 
-.nav-a:hover,
-.nav-a:focus {
+.nav-a:hover
+/* .nav-a:focus */
+ {
     color: #4F545F;
     background-color: #F7DDA4;
     border: 2px solid goldenrod;
@@ -236,11 +237,9 @@ header {
     max-height: 50rem;
 }
 
-.team-lead__presentation:hover,
-.team-lead__presentation:focus > 
+.team-lead__presentation:hover > 
 .team-lead__presentation-entity,
-.realtor__presentation:hover,
-.realtor__presentation:focus >
+.realtor__presentation:hover >
 .realtor__presentation-entity {
     color: #FFD700;
     transition: color 200ms linear;
@@ -287,8 +286,7 @@ header {
     transition: color 300ms linear;
 }
 
-.button-contactUs:hover,
-.button-contactUs:focus {
+.button-contactUs:hover {
     color: #4F545F;
     background-color: #F7DDA4;
     -webkit-transition: color 300ms linear;
@@ -869,8 +867,7 @@ option:first-child {
     border-radius: 5rem;
 }
 
-.contact-submit div:hover,
-.contact-submit div:focus {
+.contact-submit div:hover {
     -webkit-transition: all .2s ease-in-out;
     -ms-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
