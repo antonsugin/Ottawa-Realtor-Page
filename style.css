@@ -1169,7 +1169,7 @@ footer {
 
     .navigation {
         /* font-size: 3.5rem; */
-        font-weight: 600;
+        /* font-weight: 600; */
         width: 100%;
         justify-content: space-around;
     }
@@ -1184,7 +1184,6 @@ footer {
 
     .team-lead {
         width: 100%;
-        /* height: fit-content; */
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-evenly;
@@ -1543,13 +1542,17 @@ footer {
 
     /*  ************  HEADER  ***********  */
 
+    header {
+        height: 100vh;
+    }
+
     .header-slogan h1 {
         font-size: 5rem;
     }    
 
     .navigation {
         font-size: 2rem;
-        font-weight: 600;
+        /* font-weight: 600; */
     }
 
 
@@ -1567,6 +1570,10 @@ footer {
     .team-lead__presentation span.team-lead__name,
     .team-lead__presentation span.team-lead__dream {
         font-size: 2.5rem;
+    }
+
+    .team-lead p {
+        font-size: 2rem;
     }
 
     /* ************  REALTORS  ***********  */
@@ -1629,6 +1636,9 @@ footer {
 
     /*  ************  HEADER  ***********  */
 
+    header {
+        height: 100%;
+    }
 
 
     .navigation {
@@ -1666,12 +1676,24 @@ footer {
     }
 
     .team-lead {
-        width: 100%;
-        /* height: fit-content; */
+        /* width: 100%;
         flex-direction: row;
         align-items: flex-start;
-        justify-content: space-evenly;
+        justify-content: space-evenly; */
     }
+
+    .team-lead p > * {
+        font-size: 3rem;
+    }
+
+    .team-lead p {
+        font-size: 2rem;
+    }
+
+    .team-lead__presentation span.team-lead__name,
+    .team-lead__presentation span.team-lead__dream {
+        font-size: 2.3rem;
+    } 
 
     /* .team-lead__wrapper{
         max-width: 25rem;
@@ -1766,6 +1788,14 @@ footer {
     
 }  
 
+@media only screen and (max-width: 860px) {
+
+    /*  ************  HEADER  ***********  */
+
+    .nav-a {
+        letter-spacing: .3rem;
+    }
+}
 
 @media only screen and (max-width: 800px) {
 
@@ -1777,7 +1807,6 @@ footer {
 
     .humburger{
         z-index: 1;
-        /* height: 100%;     */
     }
 
     .nav-humburger {
@@ -1793,6 +1822,14 @@ footer {
 
     
     /*  ************  HEADER  ***********  */
+
+    .navigation{
+        display: none;
+    }
+
+    .nav-a {
+        letter-spacing: .5rem;
+    }
 
     .team-lead__wrapper{
         max-width: 27rem;
@@ -1823,7 +1860,7 @@ footer {
         padding-top: 5rem;
         padding-right: 0;
     }
-    
+
 
     /*  ************  REALTORS  ***********  */ 
 
@@ -1854,11 +1891,7 @@ footer {
         width: 100%;
     }
 
-    /*  ************  HEADER  ***********  */
-
-    .navigation{
-        display: none;
-    }
+    
 }
 
 
@@ -1902,11 +1935,6 @@ footer {
     .header-wrapper {
         padding: 2rem;
     }
-
-    /* .header-slogan {
-        top: calc(100vh - 30vh);
-        left: calc(100vw - 50vw);
-    } */
 
     .team-lead__presentation {
         display: none;
@@ -2100,6 +2128,112 @@ footer {
     }
 
 }
+
+
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 896px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+    .menu {
+        display: block;
+        z-index: 2;
+    }
+
+    .humburger{
+        z-index: 1;
+    }
+
+    .nav-humburger {
+        height: 100%;
+    }
+
+    .nav-open header {
+        height: 100vh;
+        transition: .2s;
+        -webkit-transition: .2s;
+        -moz-transition: .2s;
+    }
+
+    header {
+        height: 100vh;
+    }
+
+    .team-lead__presentation {
+        display: none;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .team-lead__wrapper{
+        max-width: 23rem;
+        max-height: 23rem;
+        align-self: flex-end;
+    }
+
+    .team-lead__wrapper img{
+        height: 23rem;
+        width: 23rem;
+    }
+
+    .header-wrapper {
+        padding: 0;
+    }
+
+    .team-lead {
+        margin: 0;
+        justify-content: flex-end;
+        padding-top: 2rem;
+        padding-right: 2rem;
+    }
+
+    .header-slogan {
+        margin: 0;
+        text-align: start;
+        padding-left: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .header-slogan h1 {
+        font-size: 3rem;
+    }
+
+    .button-contactUs {
+        letter-spacing: .5rem;
+        /* padding: .5rem 2.5rem; */
+        font-size: 1.8rem;
+        padding: .5rem 1.5rem;
+    }
+
+    .menu {
+        top: 15%;
+    }
+}
+
+/* @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .team-lead__presentation {
+        display: none;
+    }
+
+    .menu {
+        top: 15%;
+    }
+
+    .header-slogan {
+        background-color: purple;
+    }
+} */
+
+
+
 
 
 
