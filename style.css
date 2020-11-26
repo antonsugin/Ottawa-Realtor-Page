@@ -67,8 +67,8 @@ a {
 
 .menu {
     cursor: pointer;
-    top: 7%;
-    left: 7%;
+    top: 15%;
+    left: 4%;
     display: none;
 }
 
@@ -1954,7 +1954,6 @@ footer {
     .menu {
         display: block;
         z-index: 2;
-        top: 15%;
     }
 
     .humburger{
