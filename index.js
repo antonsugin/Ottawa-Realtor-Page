@@ -8,6 +8,7 @@ window.onload = function () {
 
 
 
+
 var now = new Date();
 var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ];
 
@@ -78,14 +79,14 @@ function scrollFunction() {
     }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+// When the user clicks the button, it scrolls to the top of the document.
 function topFunction() {
   document.body.scrollTop = (0,0);
   document.documentElement.scrollTop = (0,0);
 }
 
 
-// Changed input colors 
+// Change Input Colors 
 function changeInputColor (id, type) {
         
     var curInput = document.getElementById(id);
@@ -124,8 +125,17 @@ function changeInputColor (id, type) {
 
 // Menu nav bar visibility
 var humToggle = document.querySelector('.menu');
+var navLinks = document.querySelectorAll('.links');
 
+// Opening and Closing Navigation on the Small Screen
 humToggle.addEventListener('click', () => {
   document.body.classList.toggle('nav-open');
 });
 
+// Opening and closing navigation on a small screen when clicking on a link
+for (var i = 0; i < navLinks.length; i++){
+    navLinks[i].addEventListener('click', () => {
+        document.body.classList.remove('nav-open');
+        document.getElementById("menu").checked = false;
+    });  
+}

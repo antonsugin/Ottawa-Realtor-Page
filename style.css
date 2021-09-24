@@ -161,7 +161,8 @@ header {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    padding-top: 5rem;
+    /* padding-top: 5rem; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    padding-top: 2rem;
     padding-right: 3rem;
 }
 
@@ -198,7 +199,8 @@ header {
 .nav-a:hover {
     color: #4F545F;
     background-color: #F7DDA4;
-    border: 2px solid goldenrod;
+    /* border: 2px solid goldenrod; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    border-radius: 10px;
     -webkit-transition: background-color 200ms linear;
     -ms-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
