@@ -334,9 +334,9 @@ header {
     padding-left: 20rem ;
     display: flex;
     justify-content: space-evenly;
-    background: -moz-linear-gradient(228deg, rgba(15,32,39,.9) 0%, rgba(32,58,67,.9) 44%, rgba(44,83,100,.9) 58%),url("images/SalesTeam/backgroundImage/Original.jpg") no-repeat center center / cover ;
-    background: -webkit-linear-gradient(228deg, rgba(15,32,39,.9) 0%, rgba(32,58,67,.9) 44%, rgba(44,83,100,.9) 58%),url("images/SalesTeam/backgroundImage/Original.jpg") no-repeat center center / cover ;
-    background: linear-gradient(228deg, rgba(15,32,39,.9) 0%, rgba(32,58,67,.9) 44%, rgba(44,83,100,.9) 58%),url("images/SalesTeam/backgroundImage/Original.jpg") no-repeat center center / cover ;
+    background: -moz-linear-gradient(228deg, rgba(15,32,39,.9) 0%, rgba(32,58,67,.9) 44%, rgba(44,83,100,.9) 58%),url("images/SalesTeam/backgroundImage/Original.webp") no-repeat center center / cover ;
+    background: -webkit-linear-gradient(228deg, rgba(15,32,39,.9) 0%, rgba(32,58,67,.9) 44%, rgba(44,83,100,.9) 58%),url("images/SalesTeam/backgroundImage/Original.webp") no-repeat center center / cover ;
+    background: linear-gradient(228deg, rgba(15,32,39,.9) 0%, rgba(32,58,67,.9) 44%, rgba(44,83,100,.9) 58%),url("images/SalesTeam/backgroundImage/Original.webp") no-repeat center center / cover ;
     height: 100%; 
 }
 
@@ -1034,8 +1034,8 @@ footer {
         padding: 0;
         padding-top:  3rem;
         height: auto;
-        background: linear-gradient(228deg, rgba(15,32,39,.9) 0%, rgba(32,58,67,.9) 44%, rgba(44,83,100,.9) 58%),url("images/SalesTeam/backgroundImage/Large.jpg") no-repeat center center / cover ;
-        background: -webkit-linear-gradient(228deg, rgba(15,32,39,.9) 0%, rgba(32,58,67,.9) 44%, rgba(44,83,100,.9) 58%),url("images/SalesTeam/backgroundImage/Large.jpg") no-repeat center center / cover ;
+        background: linear-gradient(228deg, rgba(15,32,39,.9) 0%, rgba(32,58,67,.9) 44%, rgba(44,83,100,.9) 58%),url("images/SalesTeam/backgroundImage/Large.webp") no-repeat center center / cover ;
+        background: -webkit-linear-gradient(228deg, rgba(15,32,39,.9) 0%, rgba(32,58,67,.9) 44%, rgba(44,83,100,.9) 58%),url("images/SalesTeam/backgroundImage/Large.webp") no-repeat center center / cover ;
     } 
 
     .realtor-one,
@@ -1210,8 +1210,8 @@ footer {
     /*  ************  REALTORS  ***********  */
 
     .realtors{
-        background: linear-gradient(228deg, rgba(15,32,39,.9) 0%, rgba(32,58,67,.9) 44%, rgba(44,83,100,.9) 58%),url("images/SalesTeam/backgroundImage/Medium.jpg") no-repeat center center / cover ;
-        background: -webkit-linear-gradient(228deg, rgba(15,32,39,.9) 0%, rgba(32,58,67,.9) 44%, rgba(44,83,100,.9) 58%),url("images/SalesTeam/backgroundImage/Medium.jpg") no-repeat center center / cover ;
+        background: linear-gradient(228deg, rgba(15,32,39,.9) 0%, rgba(32,58,67,.9) 44%, rgba(44,83,100,.9) 58%),url("images/SalesTeam/backgroundImage/Medium.webp") no-repeat center center / cover ;
+        background: -webkit-linear-gradient(228deg, rgba(15,32,39,.9) 0%, rgba(32,58,67,.9) 44%, rgba(44,83,100,.9) 58%),url("images/SalesTeam/backgroundImage/Medium.webp") no-repeat center center / cover ;
     } 
 
 
@@ -1820,8 +1820,8 @@ footer {
     /*  ************  REALTORS  ***********  */
 
     .realtors{
-        background: linear-gradient(228deg, rgba(15,32,39,.9) 0%, rgba(32,58,67,.9) 44%, rgba(44,83,100,.9) 58%),url("images/SalesTeam/backgroundImage/Small.jpg") no-repeat center center / cover ;
-        background: -webkit-linear-gradient(228deg, rgba(15,32,39,.9) 0%, rgba(32,58,67,.9) 44%, rgba(44,83,100,.9) 58%),url("images/SalesTeam/backgroundImage/Small.jpg") no-repeat center center / cover ;
+        background: linear-gradient(228deg, rgba(15,32,39,.9) 0%, rgba(32,58,67,.9) 44%, rgba(44,83,100,.9) 58%),url("images/SalesTeam/backgroundImage/Small.webp") no-repeat center center / cover ;
+        background: -webkit-linear-gradient(228deg, rgba(15,32,39,.9) 0%, rgba(32,58,67,.9) 44%, rgba(44,83,100,.9) 58%),url("images/SalesTeam/backgroundImage/Small.webp") no-repeat center center / cover ;
     } 
 
 
